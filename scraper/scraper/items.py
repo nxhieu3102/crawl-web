@@ -21,18 +21,6 @@ class ProductItem(scrapy.Item):
     
     Type = scrapy.Field()
     
-
-class ConfigItem(scrapy.Item):
-    ProdID = scrapy.Field()
-    ConfigName = scrapy.Field()
-    Detail = scrapy.Field()
-    
-
-class FeatureItem(scrapy.Item):
-    ProdID = scrapy.Field()
-    FeatureName = scrapy.Field()
-  
-  
-class PromotionItem(scrapy.Item):
-    ProdID = scrapy.Field()
-    Detail = scrapy.Field()
+    ConfigDetail = scrapy.Field()
+    FeatureDetail = scrapy.Field()
+    PromotionDetail = scrapy.Field()

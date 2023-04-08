@@ -134,10 +134,5 @@ FIXTURE_DIRS = (
 )
 
 CRONJOBS = [
-    ('* * * * *', 'django.core.management.call_command', ['crawlCellPhoneS']),
-    ('* * * * *', 'django.core.management.call_command', ['crawlFPTShop']),
-    ('* * * * *', 'django.core.management.call_command', ['crawlPhongVu']),
-    ('* * * * *', 'django.core.management.call_command', ['crawlTGDD']),
-    ('* * * * *', 'django.core.management.call_command', ['crawlTiki']),
-    ('* * * * *', 'django.core.management.call_command', ['crawlViettelStore'])
+    ('* * * * *', 'django.core.management.call_command',['hello']),
 ]
