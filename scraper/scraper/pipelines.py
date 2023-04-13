@@ -7,7 +7,8 @@
 # useful for handling different item types with a single interface
 from itemadapter import ItemAdapter
 from store.models import Product, Configuration, Feature, Promotion, Errors
-from scraper.ProcessData import ConfigFixed
+from scraper.ProcessData.PhongVu import PVConfigFixed
+from scraper.ProcessData.FPTShop import FPTConfigFixed
 from django.db.models import Q
 from django.db import IntegrityError
 
@@ -30,46 +31,62 @@ class ScraperPipeline:
         }
         
         product = ''
-        product_created = ''
+        product_created = False
         
-        try:
-            product, product_created = Product.objects.filter(
-                Q(ProductLink = item['ProductLink'])
-            ).get_or_create(__product)
-        except IntegrityError as e:
-            Errors.objects.create(
-                ProdInfo = item['ProductLink'],
-                ErrorDetail = e
-            )
-        
-        if product_created == True:
-            for key, value in ConfigFixed(item['ConfigDetail']).items():
-                Configuration.objects.create(
-                    #ProdID = item['ProductID'],
-                    ProdID = product,
-                    ConfigName = key,
-                    Detail = value
+        if item['ProductID'] is not None:
+            try:
+                product, product_created = Product.objects.filter(
+                    Q(ProductLink = item['ProductLink'])
+                ).get_or_create(__product)
+            except IntegrityError as e:
+                Errors.objects.create(
+                    ProdInfo = item['ProductLink'],
+                    ErrorDetail = e
                 )
+                
+        if product_created == True:
+            if item['ShopName'] == 'Phong Vũ':
+                for key, value in PVConfigFixed(item['ConfigDetail']).items():
+                    Configuration.objects.create(
+                        ProdID = product,
+                        ConfigName = key,
+                        Detail = value
+                    )
+            elif item['ShopName'] == 'FPTShop':
+                for key, value in FPTConfigFixed(item['ConfigDetail']).items():
+                    Configuration.objects.create(
+                        ProdID = product,
+                        ConfigName = key,
+                        Detail = value
+                    )
         
             Promotion.objects.create(
-                #ProdID = item['ProductID'],
                 ProdID = product,
                 Detail = item['PromotionDetail']
             )
         else:
-            if item['ProductName'] != '':
-                #print("hello")
-                product = Product.objects.filter(ProductLink = item["ProductLink"])
+            if item['ProductID'] is not None:
+                product = Product.objects.get(ProductLink = item["ProductLink"])
                 product.update(SalePrice = item["SalePrice"])
                 product.update(NormalPrice = item["NormalPrice"])
             else:
-                temp = Product.objects.filter(ProductLink = __product["ProductLink"])
-                Feature.objects.create(
-                    #ProdID = temp.get('ProductID'),
-                    ProdID = temp,
-                    Detail = item['FeatureDetail']
-                )
-
+                temp = Product.objects.filter(ProductLink = item["ProductLink"])
+                if len(temp):
+                    '''
+                    try:
+                        feature, feature_created = Feature.objects.filter(
+                            Q(ProdID = temp[0], FeatureName = item['FeatureDetail'])
+                        ).get_or_create(ProdID = temp[0], FeatureName = item['FeatureDetail'])
+                    except IntegrityError as e:
+                        Errors.objects.create(
+                            ProdInfo = item['ProductLink'],
+                            ErrorDetail = e
+                    )
+                    '''
+                    Feature.objects.create(
+                        ProdID = temp[0],
+                        FeatureName = item['FeatureDetail']
+                    )
         return item
     
     def close_spider(self, spider):
