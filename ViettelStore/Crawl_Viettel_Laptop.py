@@ -30,6 +30,17 @@ params = {
     '__blob': 'publicationFile'
 }
 
+# brandName
+def findBrand(s):
+    brands = ['macbook' , 'dell' , 'asus' , 'aser', 
+              'masstel' , 'lenovo' , 'hp' , 'massko']
+    for brand in brands:
+        if brand.upper() in s.upper():
+            if brand == 'macbook':
+                brand = 'APPLE'
+            return brand.upper()
+    return None
+
 #name
 def getName(soup):
     div = soup.find('div' , class_='left-li2').find('h1')
@@ -63,25 +74,20 @@ def getPrice(soup):
 def getConfig(soup):
     div = soup.find('tbody').find_all('tr')
     # print(div)
-    romInfor = 'none'
-    CPUInfor = 'none'
-    screenSize = 'none'
-    ramInfor = 'none'
-    graphCard = 'none'
-    for li in div:
-        luu = li.find_all('td')
-        content = luu[0].text
-        if 'Ổ cứng' in content:
-            romInfor = luu[1].text
-        if 'Bộ vi xử lý' in content:
-            CPUInfor = luu[1].text
-        if 'Màn hình' in content:
-            screenSize = luu[1].text
-        if 'Bộ nhớ' in content:
-            ramInfor = luu[1].text
-        if 'Card đồ họa' in content:
-            graphCard = luu[1].text
-    return [CPUInfor , ramInfor , romInfor , graphCard , screenSize]
+    realName = ["CPU", "RAM", "Lưu trữ", "Màn hình", 
+                "Hệ điều hành", "Đồ hoạ", "Pin", "Khối lượng"]
+    ConfigPattern = ["Bộ vi xử lý", "Bộ nhớ", "Ổ cứng", "Màn hình:",
+                    "Hệ điều hành:", "Card đồ họa:", "pin:", "khối lượng"]
+
+    item = {}
+    for tr in div:
+        left = tr.find_all('td')[0].text
+        right = tr.find_all('td')[1].text
+        for i in range(len(ConfigPattern)):
+            if ConfigPattern[i] in left:
+                item[realName[i]] = right
+    
+    return item
 
 #promote
 def GetPromote(soup):
@@ -91,17 +97,6 @@ def GetPromote(soup):
     content_lines = [line.strip() for line in elements.split("\n") if line.strip()]
     result = [line.replace(", chi tiết\xa0TẠI ĐÂY", "") for line in content_lines]
     result = [line.replace("\xa0", " ") for line in content_lines]
-    
-
-
-    # for i in content_lines:
-    #     i = i.replace(', chi tiết\xa0TẠI ĐÂY' , '')
-    #     print(i)
-    # 6
-    # print(result)
-
-    # for element in elements:
-    #     print(element)
     return result
 
 #rating
@@ -124,7 +119,7 @@ def getRating(soup):
     return [star , ratingNum]
 
 
-f = open('.\DataViettelStore\link_LapTop.txt' , 'r')
+f = open('ViettelStore\DataViettelStore\link_LapTop.txt' , 'r')
 productLinks = []
 for line in f:
     productLinks.append(line.strip())
@@ -136,36 +131,56 @@ f.close()
 #     print(link)
 
 
-file = open('.\DataViettelStore\link_LapTop.csv', 'a', encoding='utf-8-sig', newline='')
-writer = csv.writer(file)
+# file = open('ViettelStore\DataViettelStore\LapTop.json', 'a', encoding='utf-8-sig', newline='')
+# writer = json.(file)
 # writer.writerow(['Price(old, present)' , 'Name' , 'Image' , 'Rating(stars, rating number)' , 'Promotion(save as a list)' , 'Link' , 'Configuration(CPU, RAM, ROM, screenCard, screen)'])
+count = 0
+itemList = []
 for link in productLinks:
+    print(count + 1)
     print(link)
     session = HTMLSession()
     # link = 'https://viettelstore.vn/laptop/mtxt-giao-duc-masstel-e116-intel-celeron-n4020-4gb-ram-128gb-emmc-11-6-inch-hd-win-10-pro-grey-pid289222.html'
     # r = requests.get(link , headers = headers)
     # soup = BeautifulSoup(r.content , 'html.parser')
     response = session.get(link)
-    response.html.render(timeout=10000)  # render the dynamic content
+    response.html.render(timeout=15000)  # render the dynamic content
     soup = BeautifulSoup(response.html.html, 'html.parser')  # parse the HTML
     # print(soup)
 
-    price = getPrice(soup)
-    # print(price)
-    name = getName(soup)
-    image = getImage(soup)
-    # print(image)
+    item = {}
 
-    rating = getRating(soup)
-    # print(rating)
-    promote = GetPromote(soup)
-    #link
-    config = getConfig(soup)
-    # print(config)
-    writer.writerow([price , name , image , rating , promote , link , config])
-    # print([price , name , image , rating , promote , link , config])
+    temp = getPrice(soup)
+    item['SalePrice'] = temp[1] #present price
+    item['NormalPrice'] = temp[0] #old price
+    if temp[1] == None:
+        continue
+    
+
+    count += 1
+    item['ProductID'] = 'VSLAPTOP' + str(count)
+    
+    item['ImageLink'] = getImage(soup)
+
+    item['ProductName'] = getName(soup)
+
+    item['ShopName'] = 'Viettel Store'
+
+    item['Type'] = 'Máy tính cá nhân'
+    
+    item['BrandName'] = findBrand(item['ProductName'])
+
+    item['ConfigDetail'] = getConfig(soup)
+
+    item['ProductLink'] = link
+
+    item['PromotionDetail'] = GetPromote(soup)
+
+    # print(item)
+    itemList.append(item)
+
     session.close()
     print('Done!\n')
 
-
-writer.close()
+with open('ViettelStore\DataViettelStore\LapTop.json', 'a', encoding='utf-8-sig', newline='') as outfile:
+    json.dump(itemList, outfile)

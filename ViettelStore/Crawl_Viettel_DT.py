@@ -37,6 +37,17 @@ def getName(soup):
     return div.text.strip()
     
 
+# brandName
+def findBrand(s):
+    brands = ['iphone' , 'samsung' , 'oppo' , 'xiaomi' , 'vivo' , 'realme' ,
+                'zte', 'nokia', 'itel' , 'masstel' , 'philips' , 'tecno']
+    for brand in brands:
+        if brand.upper() in s.upper():
+            if brand == 'iphone':
+                brand = 'APPLE'
+            return brand.upper()
+    return None
+
 ##image
 def getImage(soup):
     img = 'None'
@@ -52,6 +63,8 @@ def getImage(soup):
 #old price and present price
 def getPrice(soup):
     div = soup.find('div' , class_='left-li2')
+    if div == None:
+        return [None , None]
     # print(div)
     presentPrice = div.find('span' , {'id':'_price_new436'}).text
     # print(presentPrice)
@@ -61,22 +74,24 @@ def getPrice(soup):
     # print(oldPrice)
     return [oldPrice , presentPrice]
 
-
 #cau hinh
 def getConfig(soup):
     div = soup.find('tbody').find_all('tr')
     # print(div)
-    romInfor = 'none'
-    pinInfor = 'none'
-    for li in div:
-        luu = li.find_all('td')
-        content = luu[0].text
-        if 'Bộ nhớ trong' in content:
-            romInfor = luu[1].text
-        if 'Pin' in content:
-            pinInfor = luu[1].text
-    return [romInfor , pinInfor]
+    ConfigPattern = ["Bộ nhớ trong", "Màn hình", "Hệ điều hành", 
+                    "Pin", "Camera sau", "Camera trước"]
+        
+    realName = ["Lưu trữ", "Màn hình", "Hệ điều hành", 
+                "Pin", "Camera sau", "Camera trước"]
 
+    item = {}
+    for tr in div:
+        left = tr.find_all('td')[0].text
+        right = tr.find_all('td')[1].text
+        for i in range(len(ConfigPattern)):
+            if ConfigPattern[i] in left:
+                item[realName[i]] = right
+    return item
 
 #promote
 def GetPromote(soup):
@@ -84,19 +99,9 @@ def GetPromote(soup):
         return []
     elements = soup.find('div' , {'class':'body-promotion'}).text
     content_lines = [line.strip() for line in elements.split("\n") if line.strip()]
-    result = [line.replace(", chi tiết\xa0TẠI ĐÂY", "") for line in content_lines]
-    result = [line.replace("\xa0", " ") for line in content_lines]
+    result = [line.replace(", chi tiết TẠI ĐÂY", "") for line in content_lines]
+    result = [line.replace("\xa0", " ") for line in result]
     
-
-
-    # for i in content_lines:
-    #     i = i.replace(', chi tiết\xa0TẠI ĐÂY' , '')
-    #     print(i)
-    # 6
-    # print(result)
-
-    # for element in elements:
-    #     print(element)
     return result
 
 #rating
@@ -119,7 +124,7 @@ def getRating(soup):
     return [star , ratingNum]
 
 
-f = open('.\DataViettelStore\link_DT.txt' , 'r')
+f = open('ViettelStore\DataViettelStore\link_DT.txt' , 'r')
 productLinks = []
 for line in f:
     productLinks.append(line.strip())
@@ -131,38 +136,53 @@ f.close()
 #     print(link)
 
 
-file = open('ViettelStore\DataViettelStore\link_DT.csv', 'a', encoding='utf-8-sig', newline='')
-writer = csv.writer(file)
+itemList = []
+file = open('ViettelStore\DataViettelStore\DT.json', 'a', encoding='utf-8-sig', newline='') 
+count = 0
 # writer.writerow(['Price(old, present)' , 'Name' , 'Image' , 'Rating(stars, rating number)' , 'Promotion(save as a list)' , 'Link' , 'Configuration(Rom, Pin)'])
-for link in productLinks[159:]:
+for link in productLinks:
+    print(count)
     print(link)
     session = HTMLSession()
-    # link = 'https://viettelstore.vn/dien-thoai/xiaomi-redmi-note-11-4-128gb-pid289127.html'
-    # r = requests.get(link , headers = headers)
-    # soup = BeautifulSoup(r.content , 'html.parser')
     response = session.get(link)
-    time.sleep(2)
-    response.html.render(timeout=10000)  # render the dynamic content
+    response.html.render(timeout=15000)  # render the dynamic content
     soup = BeautifulSoup(response.html.html, 'html.parser')  # parse the HTML
     # print(soup)
 
-    price = getPrice(soup)
-    # print(price)
-    name = getName(soup)
-    image = getImage(soup)
-    # print(image)
+    item = {}
 
-    rating = getRating(soup)
-    # print(rating)
-    promote = GetPromote(soup)
-    #link
-    config = getConfig(soup)
-    # print(config)
-    writer.writerow([price , name , image , rating , promote , link , config])
-    # session.cookies.clear()
+    temp = getPrice(soup)
+    item['SalePrice'] = temp[1] #present price
+    item['NormalPrice'] = temp[0] #old price
+    if temp[1] == None:
+        continue
+    
+
+    count += 1
+    item['ProductID'] = 'VSPHONE' + str(count)
+    
+    item['ImageLink'] = getImage(soup)
+
+    item['ProductName'] = getName(soup)
+
+    item['ShopName'] = 'Viettel Store'
+
+    item['Type'] = 'Điện thoại'
+    
+    item['BrandName'] = findBrand(item['ProductName'])
+
+    item['ConfigDetail'] = getConfig(soup)
+
+    item['ProductLink'] = link
+
+    item['PromotionDetail'] = GetPromote(soup)
+
+    # print(item)
+
+    json_str = json.dumps(item)
+    file.write(json_str + ',')
+    itemList.append(item)
+
     session.close()
-    # session.cookies.clear()
     print('Done!\n')
 
-
-writer.close()

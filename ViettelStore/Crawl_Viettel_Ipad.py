@@ -52,6 +52,8 @@ def getImage(soup):
 #old price and present price
 def getPrice(soup):
     div = soup.find('div' , class_='left-li2')
+    if div == None:
+        return [None , None]
     # print(div)
     presentPrice = div.find('span' , {'id':'_price_new436'}).text
     # print(presentPrice)
@@ -63,19 +65,28 @@ def getPrice(soup):
 
 
 #cau hinh
-def getConfig(soup):
+def getConfig(soup , brandName):
     div = soup.find('tbody').find_all('tr')
     # print(div)
-    romInfor = 'none'
-    pinInfor = 'none'
-    for li in div:
-        luu = li.find_all('td')
-        content = luu[0].text
-        if 'Bộ nhớ trong' in content:
-            romInfor = luu[1].text
-        if 'Pin' in content:
-            pinInfor = luu[1].text
-    return [romInfor , pinInfor]
+    ConfigPattern = ["Bộ nhớ trong", "Màn hình", "Hệ điều hành", 
+                    "Pin", "Camera"]
+        
+    realName = ["Lưu trữ", "Màn hình", "Hệ điều hành", 
+                "Pin", "Camera"]
+
+    item = {}
+    if brandName == 'APPLE':
+        item["Hệ điều hành"] = 'IOS'
+    else:
+        item["Hệ điều hành"] = 'Android'
+
+    for tr in div:
+        left = tr.find_all('td')[0].text
+        right = tr.find_all('td')[1].text
+        for i in range(len(ConfigPattern)):
+            if ConfigPattern[i] in left:
+                item[realName[i]] = right
+    return item
 
 
 #promote
@@ -118,8 +129,20 @@ def getRating(soup):
     ratingNum = sl
     return [star , ratingNum]
 
+# brandName
+def findBrand(s):
+    brands = ['ipad' , 'samsung' , 'oppo' , 'xiaomi' ,
+             'nokia' , 'masstel' , 'lenovo' , 'itel' , 'yuho']
+    for brand in brands:
+        if brand.upper() in s.upper():
+            if brand == 'ipad':
+                brand = 'APPLE'
+            return brand.upper()
+    return None
 
-f = open('.\DataViettelStore\link_Ipad.txt' , 'r')
+
+
+f = open('ViettelStore\DataViettelStore\link_Ipad.txt' , 'r')
 productLinks = []
 for line in f:
     productLinks.append(line.strip())
@@ -131,38 +154,58 @@ f.close()
 #     print(link)
 
 
-file = open('.\DataViettelStore\link_Ipad.csv', 'a', encoding='utf-8-sig', newline='')
-writer = csv.writer(file)
-writer.writerow(['Price(old, present)' , 'Name' , 'Image' , 'Rating(stars, rating number)' , 'Promotion(save as a list)' , 'Link' , 'Configuration(Rom, Pin)'])
+# file = open('.\DataViettelStore\link_Ipad.csv', 'a', encoding='utf-8-sig', newline='')
+# writer = csv.writer(file)
+# writer.writerow(['Price(old, present)' , 'Name' , 'Image' , 'Rating(stars, rating number)' , 'Promotion(save as a list)' , 'Link' , 'Configuration(Rom, Pin)'])
+
+itemList = []
+file = open('ViettelStore\DataViettelStore\Ipad.json', 'a', encoding='utf-8-sig', newline='') 
+count = 0
+
 for link in productLinks:
+    print(count + 1)
     print(link)
     session = HTMLSession()
     # link = 'https://viettelstore.vn/dien-thoai/xiaomi-redmi-note-11-4-128gb-pid289127.html'
     # r = requests.get(link , headers = headers)
     # soup = BeautifulSoup(r.content , 'html.parser')
     response = session.get(link)
-    time.sleep(2)
-    response.html.render(timeout=10000)  # render the dynamic content
+    response.html.render(timeout=15000)  # render the dynamic content
     soup = BeautifulSoup(response.html.html, 'html.parser')  # parse the HTML
     # print(soup)
 
-    price = getPrice(soup)
-    # print(price)
-    name = getName(soup)
-    image = getImage(soup)
-    # print(image)
+    item = {}
 
-    rating = getRating(soup)
-    # print(rating)
-    promote = GetPromote(soup)
-    #link
-    config = getConfig(soup)
-    # print(config)
-    writer.writerow([price , name , image , rating , promote , link , config])
-    # session.cookies.clear()
+    temp = getPrice(soup)
+    item['SalePrice'] = temp[1] #present price
+    item['NormalPrice'] = temp[0] #old price
+    if temp[1] == None:
+        continue
+    
+    count += 1
+    item['ProductID'] = 'VSIPAD' + str(count)
+    
+    item['ImageLink'] = getImage(soup)
+
+    item['ProductName'] = getName(soup)
+
+    item['ShopName'] = 'Viettel Store'
+
+    item['Type'] = 'Ipad'
+    
+    item['BrandName'] = findBrand(item['ProductName'])
+
+    item['ConfigDetail'] = getConfig(soup , item['BrandName'])
+
+    item['ProductLink'] = link
+
+    item['PromotionDetail'] = GetPromote(soup)
+
+    # print(item)
+    json_str = json.dumps(item)
+    file.write(json_str + ',')
+    # itemList.append(item)
+
     session.close()
-    # session.cookies.clear()
     print('Done!\n')
 
-
-writer.close()
