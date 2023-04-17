@@ -55,7 +55,7 @@ class PVLaptopLinkSpider(scrapy.Spider):
  
 class PVLaptopDetailSpider(scrapy.Spider):
     loaded = ''
-    with open('./scraper/links/PVLaptopLink1.json') as value:
+    with open('./scraper/links/PVLaptopLink.json') as value:
         loaded = json.load(value)
         
     name = 'PVLaptopDetail'
@@ -299,3 +299,4 @@ class PVLaptopThietkedohoaSpider(scrapy.Spider):
         if self.page_number <= 2:
             self.page_number += 1
             yield response.follow(next_page, callback = self.parse)
+            

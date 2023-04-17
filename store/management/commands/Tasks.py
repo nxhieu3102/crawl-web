@@ -12,4 +12,11 @@ class Command(BaseCommand):
         django_path = Path(__file__).resolve().parent.parent.parent.parent
 
         os.chdir(str(django_path)+"/scraper")
-        os.system("python3 scheduler.py")
+        #os.system("python3 scheduler.py")
+        os.system("scrapy crawl TGDDLaptopDetail -o abc.json")
+        
+        
+        
+        
+        
+        

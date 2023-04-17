@@ -30,6 +30,9 @@ class Configuration(models.Model):
 class Feature(models.Model):
     ProdID = models.ForeignKey(Product, on_delete = models.CASCADE) #PVLAP1
     FeatureName = models.CharField(max_length = 50) #Sinh viên, văn phòng
+    
+    class Meta:
+        unique_together = ('ProdID','FeatureName',)
 
 class Promotion(models.Model):
     ProdID = models.ForeignKey(Product, on_delete = models.CASCADE) #PVLAP1

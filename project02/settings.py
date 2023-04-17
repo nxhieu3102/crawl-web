@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     
     #django app
     'store',
-    
+    'store_api',
+    'rest_framework'
     #for scheduler
 ]
 
@@ -131,3 +132,9 @@ PROJECT_DIR = os.path.abspath(os.path.dirname(__file__))
 FIXTURE_DIRS = (
    os.path.join(PROJECT_DIR, 'fixtures'),
 )
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+    ]
+}

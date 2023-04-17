@@ -8,7 +8,7 @@
 from itemadapter import ItemAdapter
 from store.models import Product, Configuration, Feature, Promotion, Errors
 from scraper.ProcessData.PhongVu import PVConfigFixed
-from scraper.ProcessData.FPTShop import FPTConfigFixed
+#from scraper.ProcessData.FPTShop import FPTConfigFixed
 from django.db.models import Q
 from django.db import IntegrityError
 
@@ -18,6 +18,7 @@ coloredlogs.install(level="WARN", logger=logger)
 
 class ScraperPipeline:
     def process_item(self, item, spider):
+        '''
         __product = {
             'ProductID': item['ProductID'], 
             'ProductName': item['ProductName'], 
@@ -37,7 +38,7 @@ class ScraperPipeline:
             try:
                 product, product_created = Product.objects.filter(
                     Q(ProductLink = item['ProductLink'])
-                ).get_or_create(__product)
+                ).get_or_create(__product) 
             except IntegrityError as e:
                 Errors.objects.create(
                     ProdInfo = item['ProductLink'],
@@ -45,8 +46,15 @@ class ScraperPipeline:
                 )
                 
         if product_created == True:
-            if item['ShopName'] == 'Phong Vũ':
+            if item['ShopName'] == 'PhongVu':
                 for key, value in PVConfigFixed(item['ConfigDetail']).items():
+                    Configuration.objects.create(
+                        ProdID = product,
+                        ConfigName = key,
+                        Detail = value
+                    )
+            else:
+                for key, value in item['ConfigDetail'].items():
                     Configuration.objects.create(
                         ProdID = product,
                         ConfigName = key,
@@ -72,7 +80,6 @@ class ScraperPipeline:
             else:
                 temp = Product.objects.filter(ProductLink = item["ProductLink"])
                 if len(temp):
-                    '''
                     try:
                         feature, feature_created = Feature.objects.filter(
                             Q(ProdID = temp[0], FeatureName = item['FeatureDetail'])
@@ -82,11 +89,11 @@ class ScraperPipeline:
                             ProdInfo = item['ProductLink'],
                             ErrorDetail = e
                     )
-                    '''
                     Feature.objects.create(
                         ProdID = temp[0],
                         FeatureName = item['FeatureDetail']
                     )
+        '''
         return item
     
     def close_spider(self, spider):
