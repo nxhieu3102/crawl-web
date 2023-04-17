@@ -45,7 +45,7 @@ class FPTLaptopLinkSpider(scrapy.Spider):
         
 class FPTLaptopDetailSpider(scrapy.Spider):
     loaded = ''
-    with open('./scraper/links/FPTLaptopLink1.json') as value:
+    with open('./scraper/links/fpt/laptop.json') as value:
         loaded = json.load(value)
         
     name = 'FPTLaptopDetail'
@@ -128,7 +128,7 @@ class FPTLaptopDetailSpider(scrapy.Spider):
         
         instance['FeatureDetail'] = []
         
-        print(instance)
+        #print(instance)
         
         yield instance
         
@@ -316,7 +316,7 @@ class FPTPhoneLinkSpider(scrapy.Spider):
         
 class FPTPhoneDetailSpider(scrapy.Spider):
     loaded = ''
-    with open('./scraper/links/FPTPhoneLink.json') as value:
+    with open('./scraper/links/fpt/phone.json') as value:
         loaded = json.load(value)
         
     name = 'FPTPhoneDetail'

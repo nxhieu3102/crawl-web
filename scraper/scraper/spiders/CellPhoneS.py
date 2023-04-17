@@ -43,7 +43,7 @@ class CPSLaptopLinkSpider(scrapy.Spider):
         
 class CPSLaptopDetailSpider(scrapy.Spider):
     loaded = ''
-    with open('./scraper/links/CPSLaptopLink.json') as value:
+    with open('./scraper/links/cps/laptop.json') as value:
         loaded = json.load(value)
         
     name = 'CPSLaptopDetail'
@@ -331,7 +331,7 @@ class CPSPhoneLinkSpider(scrapy.Spider):
          
 class CPSPhoneDetailSpider(scrapy.Spider):
     loaded = ''
-    with open('./scraper/links/CPSPhoneLink.json') as value:
+    with open('./scraper/links/cps/phone.json') as value:
         loaded = json.load(value)
         
     name = 'CPSPhoneDetail'

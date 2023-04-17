@@ -55,7 +55,7 @@ class PVLaptopLinkSpider(scrapy.Spider):
  
 class PVLaptopDetailSpider(scrapy.Spider):
     loaded = ''
-    with open('./scraper/links/PVLaptopLink.json') as value:
+    with open('./scraper/links/pv/laptop.json') as value:
         loaded = json.load(value)
         
     name = 'PVLaptopDetail'
@@ -216,7 +216,9 @@ class PVLaptopHocsinhsinhvienSpider(scrapy.Spider):
         
         instance = ProductItem()
         
-        items = response.css('.css-1xdyrhj::text').extract()
+        items = response.css('.css-13w7uog .css-35xksx .css-pxdb0j::attr(href)').extract()
+
+        #items = response.css('.css-1xdyrhj::text').extract()
         
         for item in items:
             instance['ProductID'] = None
@@ -248,7 +250,9 @@ class PVLaptopVanphongSpider(scrapy.Spider):
         
         instance = ProductItem()
         
-        items = response.css('.css-1xdyrhj::text').extract()
+        items = response.css('.css-13w7uog .css-35xksx .css-pxdb0j::attr(href)').extract()
+
+        #items = response.css('.css-1xdyrhj::text').extract()
         
         for item in items:
             instance['ProductID'] = None
@@ -280,7 +284,9 @@ class PVLaptopThietkedohoaSpider(scrapy.Spider):
         
         instance = ProductItem()
         
-        items = response.css('.css-1xdyrhj::text').extract()
+        items = response.css('.css-13w7uog .css-35xksx .css-pxdb0j::attr(href)').extract()
+
+        #items = response.css('.css-1xdyrhj::text').extract()
         
         for item in items:
             instance['ProductID'] = None

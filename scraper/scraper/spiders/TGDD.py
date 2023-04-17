@@ -54,7 +54,7 @@ class TGDDLaptopDetailSpider(scrapy.Spider):
     name = 'TGDDLaptopDetail'
     
     loaded = ''
-    with open('./scraper/links/TGDDLaptopLink.json') as value:
+    with open('./scraper/links/tgdd/laptop.json') as value:
         loaded = json.load(value)
     index = 1
     
@@ -73,7 +73,7 @@ class TGDDLaptopDetailSpider(scrapy.Spider):
         
         instance['ProductName'] = response.css('section.detail h1::text').get()
         if instance['ProductName'] is None:
-            instance['ProductName'] = 'Laptop'
+            instance['ProductName'] = 'Laptop '
             tmp = instance['ProductLink'].replace('https://www.thegioididong.com/laptop/','').split('-')
             for item in tmp:
                 instance['ProductName'] += item.upper() + ' '
@@ -82,7 +82,7 @@ class TGDDLaptopDetailSpider(scrapy.Spider):
         if not instance['ImageLink'].startswith('https:'):
             instance['ImageLink'] = 'https:' + instance['ImageLink']
         
-        
+        instance['ShopName'] = 'TGDD'
         instance['BrandName'] = ''
         
         if instance['ProductName']:
@@ -96,6 +96,8 @@ class TGDDLaptopDetailSpider(scrapy.Spider):
                     break
         
         instance['SalePrice'] = response.css('p.box-price-present::text').get()
+        if instance['SalePrice'] is not None and instance['SalePrice'].endswith('*'):
+            instance['SalePrice'] = instance['SalePrice'].replace(' *','').strip()
         tmp = response.css('p.box-price-old::text').get()
         if tmp is not None:
             instance['NormalPrice'] = tmp
@@ -154,23 +156,108 @@ class TGDDLaptopDetailSpider(scrapy.Spider):
             self.index += 1
             yield response.follow(next_page, callback = self.parse, headers = choice(CUSTOM_HEADERS))
 
-class TGDDLaptopGamingSpider(scrapy.spider):
-    pass
+class TGDDLaptopGamingSpider(scrapy.Spider):
+    name = 'TGDDLaptopGaming'
+    
+    start_urls = [
+        'https://www.thegioididong.com/laptop?g=laptop-gaming#c=44&p=37699&o=17&pi=2'
+    ]
+    
+    def parse(self, response):
+        instance = ProductItem()
+        
+        items = response.css('.__cate_44 > a.main-contain::attr(href)').extract()
+        for item in items:
+            instance['ProductID'] = None
+            instance['ProductName'] = ''
+            instance['BrandName'] = ''
+            instance['ShopName'] = ''
+            instance['ImageLink'] = ''
+            instance['SalePrice'] = ''
+            instance['NormalPrice']= ''
+            instance['Type'] = ''
+            instance['FeatureDetail'] = 'Gaming'
+            instance['ProductLink'] = 'https://www.thegioididong.com' + item
+            yield instance
 
 class TGDDLaptopDohoakithuat(scrapy.Spider):
-    pass
+    name = 'TGDDLaptopDohoakithuat'
+    
+    start_urls = [
+        'https://www.thegioididong.com/laptop?g=do-hoa-ky-thuat#c=44&p=81785&o=17&pi=3'
+    ]
+    
+    def parse(self, response):
+        instance = ProductItem()
+        
+        items = response.css('.__cate_44 > a.main-contain::attr(href)').extract()
+        for item in items:
+            instance['ProductID'] = None
+            instance['ProductName'] = ''
+            instance['BrandName'] = ''
+            instance['ShopName'] = ''
+            instance['ImageLink'] = ''
+            instance['SalePrice'] = ''
+            instance['NormalPrice']= ''
+            instance['Type'] = ''
+            instance['FeatureDetail'] = 'Thiết kế đồ hoạ'
+            instance['ProductLink'] = 'https://www.thegioididong.com' + item
+            yield instance
 
 class TGDDLaptopHoctapvanphong(scrapy.Spider):
-    pass
+    name = 'TGDDLaptopHoctapvanphong'
+    
+    start_urls = [
+        'https://www.thegioididong.com/laptop?g=hoc-tap-van-phong#c=44&p=37697&o=17&pi=7', 
+    ]
+    
+    def parse(self, response):
+        instance = ProductItem()
+        
+        items = response.css('.__cate_44 > a.main-contain::attr(href)').extract()
+        for item in items:
+            instance['ProductID'] = None
+            instance['ProductName'] = ''
+            instance['BrandName'] = ''
+            instance['ShopName'] = ''
+            instance['ImageLink'] = ''
+            instance['SalePrice'] = ''
+            instance['NormalPrice']= ''
+            instance['Type'] = ''
+            instance['FeatureDetail'] = 'Văn phòng'
+            instance['ProductLink'] = 'https://www.thegioididong.com' + item
+            yield instance
 
 class TGDDPhoneLinkSpider(scrapy.Spider):
-    pass
+    name = 'TGDDPhoneLink'
+    
+    start_urls = [
+        'https://www.thegioididong.com/dtdd#c=42&o=17&pi=5'
+    ]
+    
+    def parse(self, response):
+        instance = ProductItem()
+        #categoryPage > div.container-productbox > ul > li:nth-child(1) > a.main-contain
+        items = response.css('.__cate_44 > a.main-contain::attr(href)').extract()
+        for item in items:
+            instance['ProductID'] = None
+            instance['ProductName'] = ''
+            instance['BrandName'] = ''
+            instance['ShopName'] = ''
+            instance['ImageLink'] = ''
+            instance['SalePrice'] = ''
+            instance['NormalPrice']= ''
+            instance['Type'] = ''
+            instance['FeatureDetail'] = None
+            instance['ProductLink'] = 'https://thegioididong' + item
+            print(instance['ProductLink'])
+            yield instance
 
 class TGDDPhoneDetailSpider(scrapy.Spider):
     name = 'TGDDPhoneDetail'
     
     loaded = ''
-    with open('./scraper/links/TGDDPhoneLink.json') as value:
+    with open('./scraper/links/tgdd/phone.json') as value:
         loaded = json.load(value)
     index = 1
     
@@ -184,16 +271,21 @@ class TGDDPhoneDetailSpider(scrapy.Spider):
         instance['ProductID'] = 'TGDDPHONE' + str(self.index)
         instance['ProductLink'] = self.loaded[self.index - 1]['ProductLink']
         
+        print(instance['ProductLink'])
+        
         instance['ProductName'] = response.css('section.detail h1::text').get()
         if instance['ProductName'] is None:
-            tmp = instance['ProductLink'].replace('https://www.thegioididong.com/laptop/','').split('-')
+            instance['ProductName'] = ''
+            tmp = instance['ProductLink'].replace('https://www.thegioididong.com/dtdd/','').split('-')
             for item in tmp:
                 instance['ProductName'] += item.upper() + ' '
+            instance['ProductName'] = instance['ProductName'].strip()
         
         instance['ImageLink'] = response.css('a.slider-item img::attr(src)').get()
         if not instance['ImageLink'].startswith('https:'):
             instance['ImageLink'] = 'https:' + instance['ImageLink']
         
+        instance['ShopName'] = 'TGDD'
         
         instance['BrandName'] = ''
         if instance['ProductName']:
@@ -208,6 +300,8 @@ class TGDDPhoneDetailSpider(scrapy.Spider):
                     break
     
         instance['SalePrice'] = response.css('p.box-price-present::text').get()
+        if instance['SalePrice'] is not None and instance['SalePrice'].endswith('*'):
+            instance['SalePrice'] = instance['SalePrice'].replace(' *','').strip()
         tmp = response.css('p.box-price-old::text').get()
         if tmp is not None:
             instance['NormalPrice'] = tmp
@@ -234,15 +328,12 @@ class TGDDPhoneDetailSpider(scrapy.Spider):
 
             attributePath = f'.parameter__list li:nth-child({i+1}) p::text'
             attribute = response.css(attributePath).get()
-
             configSize = len(ConfigPattern)
             for j in range(configSize):
                 if ConfigPattern[j] in attribute:
                     instance['ConfigDetail'][realName[j]] = strList
                     break
 
-
-        
         instance['PromotionDetail'] = []
     
         size = len(response.css('div.divb-right'))
@@ -255,7 +346,9 @@ class TGDDPhoneDetailSpider(scrapy.Spider):
             instance['PromotionDetail'].append(text)
 
         instance['FeatureDetail'] = []
-                
+        
+        #print(instance)
+        
         yield instance
         
         if self.index < len(self.loaded):
@@ -266,9 +359,110 @@ class TGDDPhoneDetailSpider(scrapy.Spider):
             self.index += 1
             yield response.follow(next_page, callback = self.parse, headers = choice(CUSTOM_HEADERS))
 
-    
+
 class TGDDTabletLinkSpider(scrapy.Spider):
     pass
 
 class TGDDTabletDetailSpider(scrapy.Spider):
-    pass
+    name = 'TGDDTabletDetail'
+    
+    loaded = ''
+    with open('./scraper/links/tgdd/tablet.json') as value:
+        loaded = json.load(value)
+    index = 1
+    
+    start_urls = [
+        loaded[0]['ProductLink'],
+    ]
+        
+    def parse(self, response):        
+        instance = ProductItem()
+        
+        instance['ProductID'] = 'TGDDTABLET' + str(self.index)
+        instance['ProductLink'] = self.loaded[self.index - 1]['ProductLink']
+        
+        print(instance['ProductLink'])
+        
+        instance['ProductName'] = response.css('section.detail h1::text').get()
+        if instance['ProductName'] is None:
+            instance['ProductName'] = ''
+            tmp = instance['ProductLink'].replace('https://www.thegioididong.com/may-tinh-bang/','').split('-')
+            for item in tmp:
+                instance['ProductName'] += item.upper() + ' '
+            instance['ProductName'] = instance['ProductName'].strip()
+        
+        instance['ImageLink'] = response.css('a.slider-item img::attr(src)').get()
+        if instance['ImageLink'] is not None and not instance['ImageLink'].startswith('https:'):
+            instance['ImageLink'] = 'https:' + instance['ImageLink']
+        
+        instance['ShopName'] = 'TGDD'
+        
+        instance['BrandName'] = ''
+        if instance['ProductName']:
+            brands = ['ipad' , 'samsung' , 'oppo' , 'xiaomi' ,
+                  'nokia' , 'masstel', 'lenovo']
+            
+            for brand in brands:
+                if brand.upper() in instance['ProductName'].upper():
+                    if brand == 'ipad':
+                        brand = 'APPLE'
+                    instance['BrandName'] = brand.upper()
+                    break
+    
+        instance['SalePrice'] = response.css('p.box-price-present::text').get()
+        if instance['SalePrice'] is not None and instance['SalePrice'].endswith('*'):
+            instance['SalePrice'] = instance['SalePrice'].replace(' *','').strip()
+        tmp = response.css('p.box-price-old::text').get()
+        if tmp is not None:
+            instance['NormalPrice'] = tmp
+        else: instance['NormalPrice'] = instance['SalePrice']
+        
+        instance['Type'] = 'Máy tính bảng'
+        
+        ConfigPattern = ["Dung lượng lưu trữ", "Màn hình", "Hệ điều hành", 
+                          "Pin", "Camera sau", "Camera trước"]
+        
+        realName = ["Lưu trữ", "Màn hình", "Hệ điều hành", 
+                    "Pin", "Camera sau", "Camera trước"]
+        
+        size = len(response.css('.parameter__list li'))
+
+        instance['ConfigDetail'] = {}
+        
+        for i in range(size):
+            detailPath = f'.parameter__list li:nth-child({i+1}) div span::text'
+            list = response.css(detailPath).extract()
+            strList = ", ".join(list)
+
+            attributePath = f'.parameter__list li:nth-child({i+1}) p::text'
+            attribute = response.css(attributePath).get()
+            configSize = len(ConfigPattern)
+            for j in range(configSize):
+                if ConfigPattern[j] in attribute:
+                    instance['ConfigDetail'][realName[j]] = strList
+                    break
+
+        instance['PromotionDetail'] = []
+    
+        size = len(response.css('div.divb-right'))
+
+        for p in response.css('div.divb-right p'):
+            text = ''
+            for node in p.css('*::text'):
+                text += node.extract().strip()
+            text = text.replace("(click xem chi tiết)" , "")
+            instance['PromotionDetail'].append(text)
+
+        instance['FeatureDetail'] = []
+        
+        #print(instance)
+        
+        yield instance
+        
+        if self.index < len(self.loaded):
+            next_page = self.loaded[self.index]['ProductLink']
+        else: next_page = ''
+        
+        if self.index <= len(self.loaded) - 1:
+            self.index += 1
+            yield response.follow(next_page, callback = self.parse, headers = choice(CUSTOM_HEADERS))

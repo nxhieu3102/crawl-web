@@ -11,8 +11,8 @@ class Product(models.Model):
     ImageLink = models.URLField(max_length = 255) #https://...
     ProductLink = models.URLField(max_length = 255, unique = True) #https://...
     
-    SalePrice = models.CharField(max_length = 12) #31000000
-    NormalPrice = models.CharField(max_length = 12) #35000000
+    SalePrice = models.CharField(max_length = 12, null = True) #31000000
+    NormalPrice = models.CharField(max_length = 12, null = True) #35000000
     
     Type = models.CharField(max_length = 25) #May tinh ca nhan
     

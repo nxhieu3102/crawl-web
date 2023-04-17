@@ -11,6 +11,8 @@ from scraper.ProcessData.PhongVu import PVConfigFixed
 #from scraper.ProcessData.FPTShop import FPTConfigFixed
 from django.db.models import Q
 from django.db import IntegrityError
+from django.core.exceptions import ObjectDoesNotExist
+
 
 import logging, coloredlogs
 logger = logging.getLogger(__name__)
@@ -18,7 +20,6 @@ coloredlogs.install(level="WARN", logger=logger)
 
 class ScraperPipeline:
     def process_item(self, item, spider):
-        '''
         __product = {
             'ProductID': item['ProductID'], 
             'ProductName': item['ProductName'], 
@@ -60,13 +61,6 @@ class ScraperPipeline:
                         ConfigName = key,
                         Detail = value
                     )
-            elif item['ShopName'] == 'FPTShop':
-                for key, value in FPTConfigFixed(item['ConfigDetail']).items():
-                    Configuration.objects.create(
-                        ProdID = product,
-                        ConfigName = key,
-                        Detail = value
-                    )
         
             Promotion.objects.create(
                 ProdID = product,
@@ -74,10 +68,14 @@ class ScraperPipeline:
             )
         else:
             if item['ProductID'] is not None:
-                product = Product.objects.get(ProductLink = item["ProductLink"])
-                product.update(SalePrice = item["SalePrice"])
-                product.update(NormalPrice = item["NormalPrice"])
-            else:
+                try:
+                    product = Product.objects.get(ProductLink = item['ProductLink'])
+                    product.SalePrice = item['SalePrice']
+                    product.NormalPrice = item['NormalPrice']
+                    product.save()
+                except ObjectDoesNotExist:
+                    pass
+            elif item['FeatureDetail'] is not None:
                 temp = Product.objects.filter(ProductLink = item["ProductLink"])
                 if len(temp):
                     try:
@@ -89,11 +87,6 @@ class ScraperPipeline:
                             ProdInfo = item['ProductLink'],
                             ErrorDetail = e
                     )
-                    Feature.objects.create(
-                        ProdID = temp[0],
-                        FeatureName = item['FeatureDetail']
-                    )
-        '''
         return item
     
     def close_spider(self, spider):
