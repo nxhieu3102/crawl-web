@@ -1,0 +1,6618 @@
+[
+  {
+    "model": "store.feature",
+    "pk": 156,
+    "fields": {
+      "ProdID": "PVLAP6",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 157,
+    "fields": {
+      "ProdID": "PVLAP7",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 158,
+    "fields": {
+      "ProdID": "PVLAP15",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 159,
+    "fields": {
+      "ProdID": "PVLAP22",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 160,
+    "fields": {
+      "ProdID": "PVLAP30",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 161,
+    "fields": {
+      "ProdID": "PVLAP31",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 162,
+    "fields": {
+      "ProdID": "PVLAP33",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 163,
+    "fields": {
+      "ProdID": "PVLAP35",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 164,
+    "fields": {
+      "ProdID": "PVLAP34",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 165,
+    "fields": {
+      "ProdID": "PVLAP49",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 166,
+    "fields": {
+      "ProdID": "PVLAP43",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 167,
+    "fields": {
+      "ProdID": "PVLAP55",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 168,
+    "fields": {
+      "ProdID": "PVLAP57",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 169,
+    "fields": {
+      "ProdID": "PVLAP68",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 170,
+    "fields": {
+      "ProdID": "PVLAP58",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 171,
+    "fields": {
+      "ProdID": "PVLAP83",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 172,
+    "fields": {
+      "ProdID": "PVLAP73",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 173,
+    "fields": {
+      "ProdID": "PVLAP87",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 174,
+    "fields": {
+      "ProdID": "PVLAP99",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 175,
+    "fields": {
+      "ProdID": "PVLAP85",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 176,
+    "fields": {
+      "ProdID": "PVLAP93",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 177,
+    "fields": {
+      "ProdID": "PVLAP82",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 178,
+    "fields": {
+      "ProdID": "PVLAP111",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 179,
+    "fields": {
+      "ProdID": "PVLAP101",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 180,
+    "fields": {
+      "ProdID": "PVLAP133",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 181,
+    "fields": {
+      "ProdID": "PVLAP100",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 182,
+    "fields": {
+      "ProdID": "PVLAP84",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 183,
+    "fields": {
+      "ProdID": "PVLAP102",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 184,
+    "fields": {
+      "ProdID": "PVLAP122",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 185,
+    "fields": {
+      "ProdID": "PVLAP108",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 186,
+    "fields": {
+      "ProdID": "PVLAP126",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 187,
+    "fields": {
+      "ProdID": "PVLAP127",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 188,
+    "fields": {
+      "ProdID": "PVLAP109",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 189,
+    "fields": {
+      "ProdID": "PVLAP125",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 190,
+    "fields": {
+      "ProdID": "PVLAP110",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 191,
+    "fields": {
+      "ProdID": "PVLAP123",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 192,
+    "fields": {
+      "ProdID": "PVLAP98",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 193,
+    "fields": {
+      "ProdID": "PVLAP155",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 194,
+    "fields": {
+      "ProdID": "PVLAP169",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 195,
+    "fields": {
+      "ProdID": "PVLAP117",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 196,
+    "fields": {
+      "ProdID": "PVLAP115",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 197,
+    "fields": {
+      "ProdID": "PVLAP116",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 198,
+    "fields": {
+      "ProdID": "PVLAP139",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 199,
+    "fields": {
+      "ProdID": "PVLAP124",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 200,
+    "fields": {
+      "ProdID": "PVLAP146",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 201,
+    "fields": {
+      "ProdID": "PVLAP190",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 202,
+    "fields": {
+      "ProdID": "PVLAP148",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 203,
+    "fields": {
+      "ProdID": "PVLAP157",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 204,
+    "fields": {
+      "ProdID": "PVLAP141",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 205,
+    "fields": {
+      "ProdID": "PVLAP329",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 206,
+    "fields": {
+      "ProdID": "PVLAP168",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 207,
+    "fields": {
+      "ProdID": "PVLAP217",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 208,
+    "fields": {
+      "ProdID": "PVLAP147",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 209,
+    "fields": {
+      "ProdID": "PVLAP189",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 210,
+    "fields": {
+      "ProdID": "PVLAP149",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 211,
+    "fields": {
+      "ProdID": "PVLAP140",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 212,
+    "fields": {
+      "ProdID": "PVLAP170",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 213,
+    "fields": {
+      "ProdID": "PVLAP156",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 214,
+    "fields": {
+      "ProdID": "PVLAP188",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 215,
+    "fields": {
+      "ProdID": "PVLAP222",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 216,
+    "fields": {
+      "ProdID": "PVLAP186",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 217,
+    "fields": {
+      "ProdID": "PVLAP187",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 218,
+    "fields": {
+      "ProdID": "PVLAP260",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 219,
+    "fields": {
+      "ProdID": "PVLAP254",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 220,
+    "fields": {
+      "ProdID": "PVLAP221",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 221,
+    "fields": {
+      "ProdID": "PVLAP223",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 222,
+    "fields": {
+      "ProdID": "PVLAP258",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 223,
+    "fields": {
+      "ProdID": "PVLAP259",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 224,
+    "fields": {
+      "ProdID": "PVLAP224",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 225,
+    "fields": {
+      "ProdID": "PVLAP225",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 226,
+    "fields": {
+      "ProdID": "PVLAP307",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 227,
+    "fields": {
+      "ProdID": "PVLAP218",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 228,
+    "fields": {
+      "ProdID": "PVLAP298",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 229,
+    "fields": {
+      "ProdID": "PVLAP256",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 230,
+    "fields": {
+      "ProdID": "PVLAP299",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 231,
+    "fields": {
+      "ProdID": "PVLAP690",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 232,
+    "fields": {
+      "ProdID": "PVLAP257",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 233,
+    "fields": {
+      "ProdID": "PVLAP303",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 234,
+    "fields": {
+      "ProdID": "PVLAP304",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 235,
+    "fields": {
+      "ProdID": "PVLAP305",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 236,
+    "fields": {
+      "ProdID": "PVLAP306",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 237,
+    "fields": {
+      "ProdID": "PVLAP308",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 238,
+    "fields": {
+      "ProdID": "PVLAP322",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 239,
+    "fields": {
+      "ProdID": "PVLAP185",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 240,
+    "fields": {
+      "ProdID": "PVLAP344",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 241,
+    "fields": {
+      "ProdID": "PVLAP345",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 242,
+    "fields": {
+      "ProdID": "PVLAP334",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 243,
+    "fields": {
+      "ProdID": "PVLAP325",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 244,
+    "fields": {
+      "ProdID": "PVLAP362",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 245,
+    "fields": {
+      "ProdID": "PVLAP364",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 246,
+    "fields": {
+      "ProdID": "PVLAP678",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 247,
+    "fields": {
+      "ProdID": "PVLAP626",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 248,
+    "fields": {
+      "ProdID": "PVLAP627",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 249,
+    "fields": {
+      "ProdID": "PVLAP631",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 250,
+    "fields": {
+      "ProdID": "PVLAP361",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 251,
+    "fields": {
+      "ProdID": "PVLAP632",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 252,
+    "fields": {
+      "ProdID": "PVLAP633",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 253,
+    "fields": {
+      "ProdID": "PVLAP634",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 254,
+    "fields": {
+      "ProdID": "PVLAP635",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 255,
+    "fields": {
+      "ProdID": "PVLAP636",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 256,
+    "fields": {
+      "ProdID": "PVLAP639",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 257,
+    "fields": {
+      "ProdID": "PVLAP640",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 258,
+    "fields": {
+      "ProdID": "PVLAP641",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 259,
+    "fields": {
+      "ProdID": "PVLAP642",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 260,
+    "fields": {
+      "ProdID": "PVLAP643",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 261,
+    "fields": {
+      "ProdID": "PVLAP646",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 262,
+    "fields": {
+      "ProdID": "PVLAP647",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 263,
+    "fields": {
+      "ProdID": "PVLAP648",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 264,
+    "fields": {
+      "ProdID": "PVLAP649",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 265,
+    "fields": {
+      "ProdID": "PVLAP650",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 266,
+    "fields": {
+      "ProdID": "PVLAP651",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 267,
+    "fields": {
+      "ProdID": "PVLAP652",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 268,
+    "fields": {
+      "ProdID": "PVLAP653",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 269,
+    "fields": {
+      "ProdID": "PVLAP654",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 270,
+    "fields": {
+      "ProdID": "PVLAP657",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 271,
+    "fields": {
+      "ProdID": "PVLAP658",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 272,
+    "fields": {
+      "ProdID": "PVLAP659",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 273,
+    "fields": {
+      "ProdID": "PVLAP660",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 274,
+    "fields": {
+      "ProdID": "PVLAP661",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 275,
+    "fields": {
+      "ProdID": "PVLAP662",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 276,
+    "fields": {
+      "ProdID": "PVLAP663",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 277,
+    "fields": {
+      "ProdID": "PVLAP664",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 278,
+    "fields": {
+      "ProdID": "PVLAP665",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 279,
+    "fields": {
+      "ProdID": "PVLAP666",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 280,
+    "fields": {
+      "ProdID": "PVLAP667",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 281,
+    "fields": {
+      "ProdID": "PVLAP668",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 282,
+    "fields": {
+      "ProdID": "PVLAP669",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 283,
+    "fields": {
+      "ProdID": "PVLAP670",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 284,
+    "fields": {
+      "ProdID": "PVLAP671",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 285,
+    "fields": {
+      "ProdID": "PVLAP672",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 286,
+    "fields": {
+      "ProdID": "PVLAP673",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 287,
+    "fields": {
+      "ProdID": "PVLAP363",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 288,
+    "fields": {
+      "ProdID": "PVLAP674",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 289,
+    "fields": {
+      "ProdID": "PVLAP675",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 290,
+    "fields": {
+      "ProdID": "PVLAP676",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 291,
+    "fields": {
+      "ProdID": "PVLAP677",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 292,
+    "fields": {
+      "ProdID": "PVLAP679",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 293,
+    "fields": {
+      "ProdID": "PVLAP680",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 294,
+    "fields": {
+      "ProdID": "PVLAP681",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 295,
+    "fields": {
+      "ProdID": "PVLAP682",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 296,
+    "fields": {
+      "ProdID": "PVLAP683",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 297,
+    "fields": {
+      "ProdID": "PVLAP684",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 298,
+    "fields": {
+      "ProdID": "PVLAP686",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 299,
+    "fields": {
+      "ProdID": "PVLAP689",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 300,
+    "fields": {
+      "ProdID": "PVLAP691",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 301,
+    "fields": {
+      "ProdID": "PVLAP692",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 302,
+    "fields": {
+      "ProdID": "PVLAP693",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 303,
+    "fields": {
+      "ProdID": "PVLAP697",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 304,
+    "fields": {
+      "ProdID": "PVLAP698",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 305,
+    "fields": {
+      "ProdID": "PVLAP699",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 306,
+    "fields": {
+      "ProdID": "PVLAP700",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 307,
+    "fields": {
+      "ProdID": "PVLAP701",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 308,
+    "fields": {
+      "ProdID": "PVLAP702",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 309,
+    "fields": {
+      "ProdID": "PVLAP703",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 310,
+    "fields": {
+      "ProdID": "PVLAP704",
+      "FeatureName": "Doanh nghiệp"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 311,
+    "fields": {
+      "ProdID": "PVLAP9",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 312,
+    "fields": {
+      "ProdID": "PVLAP14",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 313,
+    "fields": {
+      "ProdID": "PVLAP17",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 314,
+    "fields": {
+      "ProdID": "PVLAP18",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 315,
+    "fields": {
+      "ProdID": "PVLAP20",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 316,
+    "fields": {
+      "ProdID": "PVLAP23",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 317,
+    "fields": {
+      "ProdID": "PVLAP29",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 318,
+    "fields": {
+      "ProdID": "PVLAP37",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 319,
+    "fields": {
+      "ProdID": "PVLAP42",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 320,
+    "fields": {
+      "ProdID": "PVLAP40",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 321,
+    "fields": {
+      "ProdID": "PVLAP43",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 322,
+    "fields": {
+      "ProdID": "PVLAP52",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 323,
+    "fields": {
+      "ProdID": "PVLAP62",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 324,
+    "fields": {
+      "ProdID": "PVLAP71",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 325,
+    "fields": {
+      "ProdID": "PVLAP81",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 326,
+    "fields": {
+      "ProdID": "PVLAP79",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 327,
+    "fields": {
+      "ProdID": "PVLAP59",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 328,
+    "fields": {
+      "ProdID": "PVLAP130",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 329,
+    "fields": {
+      "ProdID": "PVLAP97",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 330,
+    "fields": {
+      "ProdID": "PVLAP319",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 331,
+    "fields": {
+      "ProdID": "PVLAP100",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 332,
+    "fields": {
+      "ProdID": "PVLAP108",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 333,
+    "fields": {
+      "ProdID": "PVLAP113",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 334,
+    "fields": {
+      "ProdID": "PVLAP98",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 335,
+    "fields": {
+      "ProdID": "PVLAP134",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 336,
+    "fields": {
+      "ProdID": "PVLAP90",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 337,
+    "fields": {
+      "ProdID": "PVLAP157",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 338,
+    "fields": {
+      "ProdID": "PVLAP141",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 339,
+    "fields": {
+      "ProdID": "PVLAP195",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 340,
+    "fields": {
+      "ProdID": "PVLAP330",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 341,
+    "fields": {
+      "ProdID": "PVLAP129",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 342,
+    "fields": {
+      "ProdID": "PVLAP217",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 343,
+    "fields": {
+      "ProdID": "PVLAP159",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 344,
+    "fields": {
+      "ProdID": "PVLAP230",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 345,
+    "fields": {
+      "ProdID": "PVLAP234",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 346,
+    "fields": {
+      "ProdID": "PVLAP203",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 347,
+    "fields": {
+      "ProdID": "PVLAP252",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 348,
+    "fields": {
+      "ProdID": "PVLAP275",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 349,
+    "fields": {
+      "ProdID": "PVLAP218",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 350,
+    "fields": {
+      "ProdID": "PVLAP297",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 351,
+    "fields": {
+      "ProdID": "PVLAP318",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 352,
+    "fields": {
+      "ProdID": "PVLAP317",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 353,
+    "fields": {
+      "ProdID": "PVLAP322",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 354,
+    "fields": {
+      "ProdID": "PVLAP89",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 355,
+    "fields": {
+      "ProdID": "PVLAP323",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 356,
+    "fields": {
+      "ProdID": "PVLAP345",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 357,
+    "fields": {
+      "ProdID": "PVLAP334",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 358,
+    "fields": {
+      "ProdID": "PVLAP337",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 359,
+    "fields": {
+      "ProdID": "PVLAP356",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 360,
+    "fields": {
+      "ProdID": "PVLAP354",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 361,
+    "fields": {
+      "ProdID": "PVLAP476",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 362,
+    "fields": {
+      "ProdID": "PVLAP489",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 363,
+    "fields": {
+      "ProdID": "PVLAP499",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 364,
+    "fields": {
+      "ProdID": "PVLAP534",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 365,
+    "fields": {
+      "ProdID": "PVLAP569",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 366,
+    "fields": {
+      "ProdID": "PVLAP570",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 367,
+    "fields": {
+      "ProdID": "PVLAP571",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 368,
+    "fields": {
+      "ProdID": "PVLAP588",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 369,
+    "fields": {
+      "ProdID": "PVLAP598",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 370,
+    "fields": {
+      "ProdID": "PVLAP630",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 371,
+    "fields": {
+      "ProdID": "PVLAP655",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 372,
+    "fields": {
+      "ProdID": "PVLAP679",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 373,
+    "fields": {
+      "ProdID": "PVLAP685",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 374,
+    "fields": {
+      "ProdID": "PVLAP686",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 375,
+    "fields": {
+      "ProdID": "PVLAP687",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 376,
+    "fields": {
+      "ProdID": "PVLAP688",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 377,
+    "fields": {
+      "ProdID": "PVLAP694",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 378,
+    "fields": {
+      "ProdID": "PVLAP695",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 379,
+    "fields": {
+      "ProdID": "PVLAP696",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 380,
+    "fields": {
+      "ProdID": "PVLAP702",
+      "FeatureName": "Doanh nhân"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 381,
+    "fields": {
+      "ProdID": "PVLAP2",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 382,
+    "fields": {
+      "ProdID": "PVLAP7",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 383,
+    "fields": {
+      "ProdID": "PVLAP8",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 384,
+    "fields": {
+      "ProdID": "PVLAP15",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 385,
+    "fields": {
+      "ProdID": "PVLAP16",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 386,
+    "fields": {
+      "ProdID": "PVLAP25",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 387,
+    "fields": {
+      "ProdID": "PVLAP26",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 388,
+    "fields": {
+      "ProdID": "PVLAP27",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 389,
+    "fields": {
+      "ProdID": "PVLAP46",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 390,
+    "fields": {
+      "ProdID": "PVLAP47",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 391,
+    "fields": {
+      "ProdID": "PVLAP41",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 392,
+    "fields": {
+      "ProdID": "PVLAP56",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 393,
+    "fields": {
+      "ProdID": "PVLAP54",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 394,
+    "fields": {
+      "ProdID": "PVLAP128",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 395,
+    "fields": {
+      "ProdID": "PVLAP51",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 396,
+    "fields": {
+      "ProdID": "PVLAP72",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 397,
+    "fields": {
+      "ProdID": "PVLAP68",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 398,
+    "fields": {
+      "ProdID": "PVLAP99",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 399,
+    "fields": {
+      "ProdID": "PVLAP105",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 400,
+    "fields": {
+      "ProdID": "PVLAP133",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 401,
+    "fields": {
+      "ProdID": "PVLAP100",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 402,
+    "fields": {
+      "ProdID": "PVLAP103",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 403,
+    "fields": {
+      "ProdID": "PVLAP109",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 404,
+    "fields": {
+      "ProdID": "PVLAP125",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 405,
+    "fields": {
+      "ProdID": "PVLAP115",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 406,
+    "fields": {
+      "ProdID": "PVLAP175",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 407,
+    "fields": {
+      "ProdID": "PVLAP168",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 408,
+    "fields": {
+      "ProdID": "PVLAP172",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 409,
+    "fields": {
+      "ProdID": "PVLAP220",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 410,
+    "fields": {
+      "ProdID": "PVLAP173",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 411,
+    "fields": {
+      "ProdID": "PVLAP192",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 412,
+    "fields": {
+      "ProdID": "PVLAP178",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 413,
+    "fields": {
+      "ProdID": "PVLAP254",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 414,
+    "fields": {
+      "ProdID": "PVLAP301",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 415,
+    "fields": {
+      "ProdID": "PVLAP311",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 416,
+    "fields": {
+      "ProdID": "PVLAP261",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 417,
+    "fields": {
+      "ProdID": "PVLAP298",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 418,
+    "fields": {
+      "ProdID": "PVLAP300",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 419,
+    "fields": {
+      "ProdID": "PVLAP302",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 420,
+    "fields": {
+      "ProdID": "PVLAP312",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 421,
+    "fields": {
+      "ProdID": "PVLAP322",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 422,
+    "fields": {
+      "ProdID": "PVLAP138",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 423,
+    "fields": {
+      "ProdID": "PVLAP345",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 424,
+    "fields": {
+      "ProdID": "PVLAP362",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 425,
+    "fields": {
+      "ProdID": "PVLAP705",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 426,
+    "fields": {
+      "ProdID": "PVLAP365",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 427,
+    "fields": {
+      "ProdID": "PVLAP706",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 428,
+    "fields": {
+      "ProdID": "PVLAP351",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 429,
+    "fields": {
+      "ProdID": "PVLAP443",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 430,
+    "fields": {
+      "ProdID": "PVLAP444",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 431,
+    "fields": {
+      "ProdID": "PVLAP452",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 432,
+    "fields": {
+      "ProdID": "PVLAP490",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 433,
+    "fields": {
+      "ProdID": "PVLAP535",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 434,
+    "fields": {
+      "ProdID": "PVLAP610",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 435,
+    "fields": {
+      "ProdID": "PVLAP616",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 436,
+    "fields": {
+      "ProdID": "PVLAP361",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 437,
+    "fields": {
+      "ProdID": "PVLAP632",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 438,
+    "fields": {
+      "ProdID": "PVLAP633",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 439,
+    "fields": {
+      "ProdID": "PVLAP634",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 440,
+    "fields": {
+      "ProdID": "PVLAP635",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 441,
+    "fields": {
+      "ProdID": "PVLAP636",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 442,
+    "fields": {
+      "ProdID": "PVLAP649",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 443,
+    "fields": {
+      "ProdID": "PVLAP654",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 444,
+    "fields": {
+      "ProdID": "PVLAP669",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 445,
+    "fields": {
+      "ProdID": "PVLAP686",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 446,
+    "fields": {
+      "ProdID": "PVLAP707",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 447,
+    "fields": {
+      "ProdID": "PVLAP724",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 448,
+    "fields": {
+      "ProdID": "PVLAP709",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 449,
+    "fields": {
+      "ProdID": "PVLAP713",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 450,
+    "fields": {
+      "ProdID": "PVLAP714",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 451,
+    "fields": {
+      "ProdID": "PVLAP715",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 452,
+    "fields": {
+      "ProdID": "PVLAP716",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 453,
+    "fields": {
+      "ProdID": "PVLAP717",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 454,
+    "fields": {
+      "ProdID": "PVLAP718",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 455,
+    "fields": {
+      "ProdID": "PVLAP719",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 456,
+    "fields": {
+      "ProdID": "PVLAP720",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 457,
+    "fields": {
+      "ProdID": "PVLAP721",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 458,
+    "fields": {
+      "ProdID": "PVLAP722",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 459,
+    "fields": {
+      "ProdID": "PVLAP725",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 460,
+    "fields": {
+      "ProdID": "PVLAP726",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 461,
+    "fields": {
+      "ProdID": "PVLAP727",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 462,
+    "fields": {
+      "ProdID": "PVLAP728",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 463,
+    "fields": {
+      "ProdID": "TGDDLAP4",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 464,
+    "fields": {
+      "ProdID": "TGDDLAP10",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 465,
+    "fields": {
+      "ProdID": "TGDDLAP13",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 466,
+    "fields": {
+      "ProdID": "TGDDLAP23",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 467,
+    "fields": {
+      "ProdID": "TGDDLAP27",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 468,
+    "fields": {
+      "ProdID": "TGDDLAP34",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 469,
+    "fields": {
+      "ProdID": "TGDDLAP35",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 470,
+    "fields": {
+      "ProdID": "TGDDLAP51",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 471,
+    "fields": {
+      "ProdID": "TGDDLAP52",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 472,
+    "fields": {
+      "ProdID": "TGDDLAP53",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 473,
+    "fields": {
+      "ProdID": "TGDDLAP54",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 474,
+    "fields": {
+      "ProdID": "TGDDLAP55",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 475,
+    "fields": {
+      "ProdID": "TGDDLAP61",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 476,
+    "fields": {
+      "ProdID": "TGDDLAP64",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 477,
+    "fields": {
+      "ProdID": "TGDDLAP74",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 478,
+    "fields": {
+      "ProdID": "TGDDLAP83",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 479,
+    "fields": {
+      "ProdID": "TGDDLAP86",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 480,
+    "fields": {
+      "ProdID": "TGDDLAP89",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 481,
+    "fields": {
+      "ProdID": "TGDDLAP92",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 482,
+    "fields": {
+      "ProdID": "TGDDLAP93",
+      "FeatureName": "Gaming"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 483,
+    "fields": {
+      "ProdID": "TGDDLAP6",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 484,
+    "fields": {
+      "ProdID": "TGDDLAP13",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 485,
+    "fields": {
+      "ProdID": "TGDDLAP23",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 486,
+    "fields": {
+      "ProdID": "TGDDLAP27",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 487,
+    "fields": {
+      "ProdID": "TGDDLAP33",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 488,
+    "fields": {
+      "ProdID": "TGDDLAP38",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 489,
+    "fields": {
+      "ProdID": "TGDDLAP51",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 490,
+    "fields": {
+      "ProdID": "TGDDLAP52",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 491,
+    "fields": {
+      "ProdID": "TGDDLAP53",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 492,
+    "fields": {
+      "ProdID": "TGDDLAP54",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 493,
+    "fields": {
+      "ProdID": "TGDDLAP61",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 494,
+    "fields": {
+      "ProdID": "TGDDLAP64",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 495,
+    "fields": {
+      "ProdID": "TGDDLAP83",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 496,
+    "fields": {
+      "ProdID": "TGDDLAP86",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 497,
+    "fields": {
+      "ProdID": "TGDDLAP89",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 498,
+    "fields": {
+      "ProdID": "TGDDLAP90",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 499,
+    "fields": {
+      "ProdID": "TGDDLAP91",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 500,
+    "fields": {
+      "ProdID": "TGDDLAP92",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 501,
+    "fields": {
+      "ProdID": "TGDDLAP93",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 502,
+    "fields": {
+      "ProdID": "TGDDLAP94",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 503,
+    "fields": {
+      "ProdID": "TGDDLAP1",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 504,
+    "fields": {
+      "ProdID": "TGDDLAP2",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 505,
+    "fields": {
+      "ProdID": "TGDDLAP3",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 506,
+    "fields": {
+      "ProdID": "TGDDLAP5",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 507,
+    "fields": {
+      "ProdID": "TGDDLAP6",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 508,
+    "fields": {
+      "ProdID": "TGDDLAP7",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 509,
+    "fields": {
+      "ProdID": "TGDDLAP8",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 510,
+    "fields": {
+      "ProdID": "TGDDLAP9",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 511,
+    "fields": {
+      "ProdID": "TGDDLAP11",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 512,
+    "fields": {
+      "ProdID": "TGDDLAP12",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 513,
+    "fields": {
+      "ProdID": "TGDDLAP14",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 514,
+    "fields": {
+      "ProdID": "TGDDLAP15",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 515,
+    "fields": {
+      "ProdID": "TGDDLAP16",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 516,
+    "fields": {
+      "ProdID": "TGDDLAP17",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 517,
+    "fields": {
+      "ProdID": "TGDDLAP19",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 518,
+    "fields": {
+      "ProdID": "TGDDLAP18",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 519,
+    "fields": {
+      "ProdID": "TGDDLAP20",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 520,
+    "fields": {
+      "ProdID": "TGDDLAP21",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 521,
+    "fields": {
+      "ProdID": "TGDDLAP22",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 522,
+    "fields": {
+      "ProdID": "TGDDLAP26",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 523,
+    "fields": {
+      "ProdID": "PVLAP6",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 524,
+    "fields": {
+      "ProdID": "PVLAP7",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 525,
+    "fields": {
+      "ProdID": "PVLAP9",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 526,
+    "fields": {
+      "ProdID": "PVLAP14",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 527,
+    "fields": {
+      "ProdID": "PVLAP20",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 528,
+    "fields": {
+      "ProdID": "PVLAP22",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 529,
+    "fields": {
+      "ProdID": "PVLAP23",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 530,
+    "fields": {
+      "ProdID": "PVLAP24",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 531,
+    "fields": {
+      "ProdID": "PVLAP33",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 532,
+    "fields": {
+      "ProdID": "PVLAP35",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 533,
+    "fields": {
+      "ProdID": "PVLAP34",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 534,
+    "fields": {
+      "ProdID": "PVLAP38",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 535,
+    "fields": {
+      "ProdID": "PVLAP37",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 536,
+    "fields": {
+      "ProdID": "PVLAP43",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 537,
+    "fields": {
+      "ProdID": "PVLAP52",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 538,
+    "fields": {
+      "ProdID": "PVLAP55",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 539,
+    "fields": {
+      "ProdID": "PVLAP130",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 540,
+    "fields": {
+      "ProdID": "PVLAP79",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 541,
+    "fields": {
+      "ProdID": "PVLAP81",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 542,
+    "fields": {
+      "ProdID": "PVLAP71",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 543,
+    "fields": {
+      "ProdID": "PVLAP70",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 544,
+    "fields": {
+      "ProdID": "PVLAP93",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 545,
+    "fields": {
+      "ProdID": "PVLAP59",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 546,
+    "fields": {
+      "ProdID": "PVLAP133",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 547,
+    "fields": {
+      "ProdID": "PVLAP83",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 548,
+    "fields": {
+      "ProdID": "PVLAP85",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 549,
+    "fields": {
+      "ProdID": "PVLAP58",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 550,
+    "fields": {
+      "ProdID": "PVLAP73",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 551,
+    "fields": {
+      "ProdID": "PVLAP84",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 552,
+    "fields": {
+      "ProdID": "PVLAP111",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 553,
+    "fields": {
+      "ProdID": "PVLAP101",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 554,
+    "fields": {
+      "ProdID": "PVLAP126",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 555,
+    "fields": {
+      "ProdID": "PVLAP127",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 556,
+    "fields": {
+      "ProdID": "PVLAP108",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 557,
+    "fields": {
+      "ProdID": "PVLAP169",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 558,
+    "fields": {
+      "ProdID": "PVLAP102",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 559,
+    "fields": {
+      "ProdID": "PVLAP150",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 560,
+    "fields": {
+      "ProdID": "PVLAP77",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 561,
+    "fields": {
+      "ProdID": "PVLAP115",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 562,
+    "fields": {
+      "ProdID": "PVLAP98",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 563,
+    "fields": {
+      "ProdID": "PVLAP125",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 564,
+    "fields": {
+      "ProdID": "PVLAP117",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 565,
+    "fields": {
+      "ProdID": "PVLAP140",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 566,
+    "fields": {
+      "ProdID": "PVLAP195",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 567,
+    "fields": {
+      "ProdID": "PVLAP124",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 568,
+    "fields": {
+      "ProdID": "PVLAP146",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 569,
+    "fields": {
+      "ProdID": "PVLAP110",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 570,
+    "fields": {
+      "ProdID": "PVLAP116",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 571,
+    "fields": {
+      "ProdID": "PVLAP190",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 572,
+    "fields": {
+      "ProdID": "PVLAP148",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 573,
+    "fields": {
+      "ProdID": "PVLAP134",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 574,
+    "fields": {
+      "ProdID": "PVLAP168",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 575,
+    "fields": {
+      "ProdID": "PVLAP149",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 576,
+    "fields": {
+      "ProdID": "PVLAP157",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 577,
+    "fields": {
+      "ProdID": "PVLAP141",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 578,
+    "fields": {
+      "ProdID": "PVLAP90",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 579,
+    "fields": {
+      "ProdID": "PVLAP217",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 580,
+    "fields": {
+      "ProdID": "PVLAP147",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 581,
+    "fields": {
+      "ProdID": "PVLAP189",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 582,
+    "fields": {
+      "ProdID": "PVLAP156",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 583,
+    "fields": {
+      "ProdID": "PVLAP193",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 584,
+    "fields": {
+      "ProdID": "PVLAP162",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 585,
+    "fields": {
+      "ProdID": "PVLAP129",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 586,
+    "fields": {
+      "ProdID": "PVLAP188",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 587,
+    "fields": {
+      "ProdID": "PVLAP139",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 588,
+    "fields": {
+      "ProdID": "PVLAP170",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 589,
+    "fields": {
+      "ProdID": "PVLAP230",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 590,
+    "fields": {
+      "ProdID": "PVLAP159",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 591,
+    "fields": {
+      "ProdID": "PVLAP186",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 592,
+    "fields": {
+      "ProdID": "PVLAP187",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 593,
+    "fields": {
+      "ProdID": "PVLAP221",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 594,
+    "fields": {
+      "ProdID": "PVLAP222",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 595,
+    "fields": {
+      "ProdID": "PVLAP260",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 596,
+    "fields": {
+      "ProdID": "PVLAP191",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 597,
+    "fields": {
+      "ProdID": "PVLAP192",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 598,
+    "fields": {
+      "ProdID": "PVLAP234",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 599,
+    "fields": {
+      "ProdID": "PVLAP203",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 600,
+    "fields": {
+      "ProdID": "PVLAP218",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 601,
+    "fields": {
+      "ProdID": "PVLAP254",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 602,
+    "fields": {
+      "ProdID": "PVLAP299",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 603,
+    "fields": {
+      "ProdID": "PVLAP223",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 604,
+    "fields": {
+      "ProdID": "PVLAP259",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 605,
+    "fields": {
+      "ProdID": "PVLAP224",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 606,
+    "fields": {
+      "ProdID": "PVLAP307",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 607,
+    "fields": {
+      "ProdID": "PVLAP308",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 608,
+    "fields": {
+      "ProdID": "PVLAP275",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 609,
+    "fields": {
+      "ProdID": "PVLAP256",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 610,
+    "fields": {
+      "ProdID": "PVLAP690",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 611,
+    "fields": {
+      "ProdID": "PVLAP257",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 612,
+    "fields": {
+      "ProdID": "PVLAP303",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 613,
+    "fields": {
+      "ProdID": "PVLAP304",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 614,
+    "fields": {
+      "ProdID": "PVLAP258",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 615,
+    "fields": {
+      "ProdID": "PVLAP305",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 616,
+    "fields": {
+      "ProdID": "PVLAP225",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 617,
+    "fields": {
+      "ProdID": "PVLAP306",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 618,
+    "fields": {
+      "ProdID": "PVLAP309",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 619,
+    "fields": {
+      "ProdID": "PVLAP310",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 620,
+    "fields": {
+      "ProdID": "PVLAP30",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 621,
+    "fields": {
+      "ProdID": "PVLAP45",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 622,
+    "fields": {
+      "ProdID": "PVLAP319",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 623,
+    "fields": {
+      "ProdID": "PVLAP89",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 624,
+    "fields": {
+      "ProdID": "PVLAP323",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 625,
+    "fields": {
+      "ProdID": "PVLAP253",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 626,
+    "fields": {
+      "ProdID": "PVLAP337",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 627,
+    "fields": {
+      "ProdID": "PVLAP356",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 628,
+    "fields": {
+      "ProdID": "PVLAP364",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 629,
+    "fields": {
+      "ProdID": "PVLAP678",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 630,
+    "fields": {
+      "ProdID": "PVLAP712",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 631,
+    "fields": {
+      "ProdID": "PVLAP354",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 632,
+    "fields": {
+      "ProdID": "PVLAP476",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 633,
+    "fields": {
+      "ProdID": "PVLAP489",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 634,
+    "fields": {
+      "ProdID": "PVLAP499",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 635,
+    "fields": {
+      "ProdID": "PVLAP534",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 636,
+    "fields": {
+      "ProdID": "PVLAP559",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 637,
+    "fields": {
+      "ProdID": "PVLAP569",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 638,
+    "fields": {
+      "ProdID": "PVLAP570",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 639,
+    "fields": {
+      "ProdID": "PVLAP571",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 640,
+    "fields": {
+      "ProdID": "PVLAP586",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 641,
+    "fields": {
+      "ProdID": "PVLAP591",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 642,
+    "fields": {
+      "ProdID": "PVLAP598",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 643,
+    "fields": {
+      "ProdID": "PVLAP646",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 644,
+    "fields": {
+      "ProdID": "PVLAP647",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 645,
+    "fields": {
+      "ProdID": "PVLAP648",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 646,
+    "fields": {
+      "ProdID": "PVLAP650",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 647,
+    "fields": {
+      "ProdID": "PVLAP651",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 648,
+    "fields": {
+      "ProdID": "PVLAP652",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 649,
+    "fields": {
+      "ProdID": "PVLAP653",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 650,
+    "fields": {
+      "ProdID": "PVLAP655",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 651,
+    "fields": {
+      "ProdID": "PVLAP657",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 652,
+    "fields": {
+      "ProdID": "PVLAP658",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 653,
+    "fields": {
+      "ProdID": "PVLAP659",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 654,
+    "fields": {
+      "ProdID": "PVLAP660",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 655,
+    "fields": {
+      "ProdID": "PVLAP661",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 656,
+    "fields": {
+      "ProdID": "PVLAP662",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 657,
+    "fields": {
+      "ProdID": "PVLAP663",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 658,
+    "fields": {
+      "ProdID": "PVLAP664",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 659,
+    "fields": {
+      "ProdID": "PVLAP665",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 660,
+    "fields": {
+      "ProdID": "PVLAP666",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 661,
+    "fields": {
+      "ProdID": "PVLAP667",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 662,
+    "fields": {
+      "ProdID": "PVLAP668",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 663,
+    "fields": {
+      "ProdID": "PVLAP669",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 664,
+    "fields": {
+      "ProdID": "PVLAP670",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 665,
+    "fields": {
+      "ProdID": "PVLAP671",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 666,
+    "fields": {
+      "ProdID": "PVLAP672",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 667,
+    "fields": {
+      "ProdID": "PVLAP673",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 668,
+    "fields": {
+      "ProdID": "PVLAP363",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 669,
+    "fields": {
+      "ProdID": "PVLAP674",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 670,
+    "fields": {
+      "ProdID": "PVLAP675",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 671,
+    "fields": {
+      "ProdID": "PVLAP676",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 672,
+    "fields": {
+      "ProdID": "PVLAP677",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 673,
+    "fields": {
+      "ProdID": "PVLAP680",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 674,
+    "fields": {
+      "ProdID": "PVLAP681",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 675,
+    "fields": {
+      "ProdID": "PVLAP682",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 676,
+    "fields": {
+      "ProdID": "PVLAP683",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 677,
+    "fields": {
+      "ProdID": "PVLAP684",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 678,
+    "fields": {
+      "ProdID": "PVLAP686",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 679,
+    "fields": {
+      "ProdID": "PVLAP689",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 680,
+    "fields": {
+      "ProdID": "PVLAP691",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 681,
+    "fields": {
+      "ProdID": "PVLAP692",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 682,
+    "fields": {
+      "ProdID": "PVLAP693",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 683,
+    "fields": {
+      "ProdID": "PVLAP697",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 684,
+    "fields": {
+      "ProdID": "PVLAP698",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 685,
+    "fields": {
+      "ProdID": "PVLAP699",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 686,
+    "fields": {
+      "ProdID": "PVLAP700",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 687,
+    "fields": {
+      "ProdID": "PVLAP701",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 688,
+    "fields": {
+      "ProdID": "PVLAP702",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 689,
+    "fields": {
+      "ProdID": "PVLAP703",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 690,
+    "fields": {
+      "ProdID": "PVLAP704",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 691,
+    "fields": {
+      "ProdID": "PVLAP322",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 692,
+    "fields": {
+      "ProdID": "PVLAP710",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 693,
+    "fields": {
+      "ProdID": "PVLAP711",
+      "FeatureName": "Học sinh - Sinh viên"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 694,
+    "fields": {
+      "ProdID": "PVLAP6",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 695,
+    "fields": {
+      "ProdID": "PVLAP7",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 696,
+    "fields": {
+      "ProdID": "PVLAP9",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 697,
+    "fields": {
+      "ProdID": "PVLAP14",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 698,
+    "fields": {
+      "ProdID": "PVLAP15",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 699,
+    "fields": {
+      "ProdID": "PVLAP17",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 700,
+    "fields": {
+      "ProdID": "PVLAP18",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 701,
+    "fields": {
+      "ProdID": "PVLAP20",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 702,
+    "fields": {
+      "ProdID": "PVLAP22",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 703,
+    "fields": {
+      "ProdID": "PVLAP23",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 704,
+    "fields": {
+      "ProdID": "PVLAP24",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 705,
+    "fields": {
+      "ProdID": "PVLAP29",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 706,
+    "fields": {
+      "ProdID": "PVLAP33",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 707,
+    "fields": {
+      "ProdID": "PVLAP35",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 708,
+    "fields": {
+      "ProdID": "PVLAP34",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 709,
+    "fields": {
+      "ProdID": "PVLAP38",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 710,
+    "fields": {
+      "ProdID": "PVLAP46",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 711,
+    "fields": {
+      "ProdID": "PVLAP37",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 712,
+    "fields": {
+      "ProdID": "PVLAP40",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 713,
+    "fields": {
+      "ProdID": "PVLAP42",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 714,
+    "fields": {
+      "ProdID": "PVLAP47",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 715,
+    "fields": {
+      "ProdID": "PVLAP43",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 716,
+    "fields": {
+      "ProdID": "PVLAP128",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 717,
+    "fields": {
+      "ProdID": "PVLAP52",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 718,
+    "fields": {
+      "ProdID": "PVLAP55",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 719,
+    "fields": {
+      "ProdID": "PVLAP130",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 720,
+    "fields": {
+      "ProdID": "PVLAP112",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 721,
+    "fields": {
+      "ProdID": "PVLAP79",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 722,
+    "fields": {
+      "ProdID": "PVLAP81",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 723,
+    "fields": {
+      "ProdID": "PVLAP62",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 724,
+    "fields": {
+      "ProdID": "PVLAP68",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 725,
+    "fields": {
+      "ProdID": "PVLAP71",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 726,
+    "fields": {
+      "ProdID": "PVLAP70",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 727,
+    "fields": {
+      "ProdID": "PVLAP72",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 728,
+    "fields": {
+      "ProdID": "PVLAP93",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 729,
+    "fields": {
+      "ProdID": "PVLAP59",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 730,
+    "fields": {
+      "ProdID": "PVLAP133",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 731,
+    "fields": {
+      "ProdID": "PVLAP83",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 732,
+    "fields": {
+      "ProdID": "PVLAP99",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 733,
+    "fields": {
+      "ProdID": "PVLAP85",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 734,
+    "fields": {
+      "ProdID": "PVLAP58",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 735,
+    "fields": {
+      "ProdID": "PVLAP105",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 736,
+    "fields": {
+      "ProdID": "PVLAP73",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 737,
+    "fields": {
+      "ProdID": "PVLAP84",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 738,
+    "fields": {
+      "ProdID": "PVLAP111",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 739,
+    "fields": {
+      "ProdID": "PVLAP100",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 740,
+    "fields": {
+      "ProdID": "PVLAP109",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 741,
+    "fields": {
+      "ProdID": "PVLAP127",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 742,
+    "fields": {
+      "ProdID": "PVLAP103",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 743,
+    "fields": {
+      "ProdID": "PVLAP108",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 744,
+    "fields": {
+      "ProdID": "PVLAP169",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 745,
+    "fields": {
+      "ProdID": "PVLAP102",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 746,
+    "fields": {
+      "ProdID": "PVLAP150",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 747,
+    "fields": {
+      "ProdID": "PVLAP77",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 748,
+    "fields": {
+      "ProdID": "PVLAP115",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 749,
+    "fields": {
+      "ProdID": "PVLAP98",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 750,
+    "fields": {
+      "ProdID": "PVLAP125",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 751,
+    "fields": {
+      "ProdID": "PVLAP117",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 752,
+    "fields": {
+      "ProdID": "PVLAP140",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 753,
+    "fields": {
+      "ProdID": "PVLAP195",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 754,
+    "fields": {
+      "ProdID": "PVLAP124",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 755,
+    "fields": {
+      "ProdID": "PVLAP146",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 756,
+    "fields": {
+      "ProdID": "PVLAP110",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 757,
+    "fields": {
+      "ProdID": "PVLAP116",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 758,
+    "fields": {
+      "ProdID": "PVLAP190",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 759,
+    "fields": {
+      "ProdID": "PVLAP148",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 760,
+    "fields": {
+      "ProdID": "PVLAP175",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 761,
+    "fields": {
+      "ProdID": "PVLAP134",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 762,
+    "fields": {
+      "ProdID": "PVLAP220",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 763,
+    "fields": {
+      "ProdID": "PVLAP168",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 764,
+    "fields": {
+      "ProdID": "PVLAP149",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 765,
+    "fields": {
+      "ProdID": "PVLAP157",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 766,
+    "fields": {
+      "ProdID": "PVLAP141",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 767,
+    "fields": {
+      "ProdID": "PVLAP90",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 768,
+    "fields": {
+      "ProdID": "PVLAP217",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 769,
+    "fields": {
+      "ProdID": "PVLAP147",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 770,
+    "fields": {
+      "ProdID": "PVLAP189",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 771,
+    "fields": {
+      "ProdID": "PVLAP156",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 772,
+    "fields": {
+      "ProdID": "PVLAP193",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 773,
+    "fields": {
+      "ProdID": "PVLAP330",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 774,
+    "fields": {
+      "ProdID": "PVLAP162",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 775,
+    "fields": {
+      "ProdID": "PVLAP129",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 776,
+    "fields": {
+      "ProdID": "PVLAP188",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 777,
+    "fields": {
+      "ProdID": "PVLAP139",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 778,
+    "fields": {
+      "ProdID": "PVLAP170",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 779,
+    "fields": {
+      "ProdID": "PVLAP230",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 780,
+    "fields": {
+      "ProdID": "PVLAP159",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 781,
+    "fields": {
+      "ProdID": "PVLAP144",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 782,
+    "fields": {
+      "ProdID": "PVLAP186",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 783,
+    "fields": {
+      "ProdID": "PVLAP187",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 784,
+    "fields": {
+      "ProdID": "PVLAP221",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 785,
+    "fields": {
+      "ProdID": "PVLAP222",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 786,
+    "fields": {
+      "ProdID": "PVLAP191",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 787,
+    "fields": {
+      "ProdID": "PVLAP192",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 788,
+    "fields": {
+      "ProdID": "PVLAP261",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 789,
+    "fields": {
+      "ProdID": "PVLAP234",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 790,
+    "fields": {
+      "ProdID": "PVLAP203",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 791,
+    "fields": {
+      "ProdID": "PVLAP218",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 792,
+    "fields": {
+      "ProdID": "PVLAP254",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 793,
+    "fields": {
+      "ProdID": "PVLAP299",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 794,
+    "fields": {
+      "ProdID": "PVLAP224",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 795,
+    "fields": {
+      "ProdID": "PVLAP307",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 796,
+    "fields": {
+      "ProdID": "PVLAP308",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 797,
+    "fields": {
+      "ProdID": "PVLAP311",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 798,
+    "fields": {
+      "ProdID": "PVLAP275",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 799,
+    "fields": {
+      "ProdID": "PVLAP284",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 800,
+    "fields": {
+      "ProdID": "PVLAP298",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 801,
+    "fields": {
+      "ProdID": "PVLAP256",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 802,
+    "fields": {
+      "ProdID": "PVLAP257",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 803,
+    "fields": {
+      "ProdID": "PVLAP303",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 804,
+    "fields": {
+      "ProdID": "PVLAP304",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 805,
+    "fields": {
+      "ProdID": "PVLAP258",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 806,
+    "fields": {
+      "ProdID": "PVLAP305",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 807,
+    "fields": {
+      "ProdID": "PVLAP225",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 808,
+    "fields": {
+      "ProdID": "PVLAP306",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 809,
+    "fields": {
+      "ProdID": "PVLAP309",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 810,
+    "fields": {
+      "ProdID": "PVLAP310",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 811,
+    "fields": {
+      "ProdID": "PVLAP312",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 812,
+    "fields": {
+      "ProdID": "PVLAP314",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 813,
+    "fields": {
+      "ProdID": "PVLAP315",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 814,
+    "fields": {
+      "ProdID": "PVLAP30",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 815,
+    "fields": {
+      "ProdID": "PVLAP45",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 816,
+    "fields": {
+      "ProdID": "PVLAP319",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 817,
+    "fields": {
+      "ProdID": "PVLAP89",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 818,
+    "fields": {
+      "ProdID": "PVLAP333",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 819,
+    "fields": {
+      "ProdID": "PVLAP323",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 820,
+    "fields": {
+      "ProdID": "PVLAP253",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 821,
+    "fields": {
+      "ProdID": "PVLAP345",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 822,
+    "fields": {
+      "ProdID": "PVLAP334",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 823,
+    "fields": {
+      "ProdID": "PVLAP337",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 824,
+    "fields": {
+      "ProdID": "PVLAP356",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 825,
+    "fields": {
+      "ProdID": "PVLAP362",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 826,
+    "fields": {
+      "ProdID": "PVLAP364",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 827,
+    "fields": {
+      "ProdID": "PVLAP678",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 828,
+    "fields": {
+      "ProdID": "PVLAP712",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 829,
+    "fields": {
+      "ProdID": "PVLAP705",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 830,
+    "fields": {
+      "ProdID": "PVLAP365",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 831,
+    "fields": {
+      "ProdID": "PVLAP706",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 832,
+    "fields": {
+      "ProdID": "PVLAP724",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 833,
+    "fields": {
+      "ProdID": "PVLAP708",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 834,
+    "fields": {
+      "ProdID": "PVLAP369",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 835,
+    "fields": {
+      "ProdID": "PVLAP370",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 836,
+    "fields": {
+      "ProdID": "PVLAP354",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 837,
+    "fields": {
+      "ProdID": "PVLAP476",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 838,
+    "fields": {
+      "ProdID": "PVLAP489",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 839,
+    "fields": {
+      "ProdID": "PVLAP499",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 840,
+    "fields": {
+      "ProdID": "PVLAP534",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 841,
+    "fields": {
+      "ProdID": "PVLAP548",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 842,
+    "fields": {
+      "ProdID": "PVLAP559",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 843,
+    "fields": {
+      "ProdID": "PVLAP569",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 844,
+    "fields": {
+      "ProdID": "PVLAP570",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 845,
+    "fields": {
+      "ProdID": "PVLAP571",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 846,
+    "fields": {
+      "ProdID": "PVLAP586",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 847,
+    "fields": {
+      "ProdID": "PVLAP588",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 848,
+    "fields": {
+      "ProdID": "PVLAP591",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 849,
+    "fields": {
+      "ProdID": "PVLAP598",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 850,
+    "fields": {
+      "ProdID": "PVLAP631",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 851,
+    "fields": {
+      "ProdID": "PVLAP361",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 852,
+    "fields": {
+      "ProdID": "PVLAP632",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 853,
+    "fields": {
+      "ProdID": "PVLAP633",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 854,
+    "fields": {
+      "ProdID": "PVLAP634",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 855,
+    "fields": {
+      "ProdID": "PVLAP635",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 856,
+    "fields": {
+      "ProdID": "PVLAP636",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 857,
+    "fields": {
+      "ProdID": "PVLAP644",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 858,
+    "fields": {
+      "ProdID": "PVLAP645",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 859,
+    "fields": {
+      "ProdID": "PVLAP646",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 860,
+    "fields": {
+      "ProdID": "PVLAP647",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 861,
+    "fields": {
+      "ProdID": "PVLAP648",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 862,
+    "fields": {
+      "ProdID": "PVLAP649",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 863,
+    "fields": {
+      "ProdID": "PVLAP650",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 864,
+    "fields": {
+      "ProdID": "PVLAP651",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 865,
+    "fields": {
+      "ProdID": "PVLAP652",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 866,
+    "fields": {
+      "ProdID": "PVLAP653",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 867,
+    "fields": {
+      "ProdID": "PVLAP654",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 868,
+    "fields": {
+      "ProdID": "PVLAP655",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 869,
+    "fields": {
+      "ProdID": "PVLAP657",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 870,
+    "fields": {
+      "ProdID": "PVLAP658",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 871,
+    "fields": {
+      "ProdID": "PVLAP659",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 872,
+    "fields": {
+      "ProdID": "PVLAP660",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 873,
+    "fields": {
+      "ProdID": "PVLAP661",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 874,
+    "fields": {
+      "ProdID": "PVLAP662",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 875,
+    "fields": {
+      "ProdID": "PVLAP663",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 876,
+    "fields": {
+      "ProdID": "PVLAP664",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 877,
+    "fields": {
+      "ProdID": "PVLAP665",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 878,
+    "fields": {
+      "ProdID": "PVLAP666",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 879,
+    "fields": {
+      "ProdID": "PVLAP667",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 880,
+    "fields": {
+      "ProdID": "PVLAP668",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 881,
+    "fields": {
+      "ProdID": "PVLAP669",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 882,
+    "fields": {
+      "ProdID": "PVLAP670",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 883,
+    "fields": {
+      "ProdID": "PVLAP671",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 884,
+    "fields": {
+      "ProdID": "PVLAP672",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 885,
+    "fields": {
+      "ProdID": "PVLAP673",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 886,
+    "fields": {
+      "ProdID": "PVLAP363",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 887,
+    "fields": {
+      "ProdID": "PVLAP674",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 888,
+    "fields": {
+      "ProdID": "PVLAP675",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 889,
+    "fields": {
+      "ProdID": "PVLAP676",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 890,
+    "fields": {
+      "ProdID": "PVLAP677",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 891,
+    "fields": {
+      "ProdID": "PVLAP679",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 892,
+    "fields": {
+      "ProdID": "PVLAP680",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 893,
+    "fields": {
+      "ProdID": "PVLAP681",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 894,
+    "fields": {
+      "ProdID": "PVLAP682",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 895,
+    "fields": {
+      "ProdID": "PVLAP683",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 896,
+    "fields": {
+      "ProdID": "PVLAP684",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 897,
+    "fields": {
+      "ProdID": "PVLAP685",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 898,
+    "fields": {
+      "ProdID": "PVLAP686",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 899,
+    "fields": {
+      "ProdID": "PVLAP689",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 900,
+    "fields": {
+      "ProdID": "PVLAP691",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 901,
+    "fields": {
+      "ProdID": "PVLAP693",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 902,
+    "fields": {
+      "ProdID": "PVLAP694",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 903,
+    "fields": {
+      "ProdID": "PVLAP695",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 904,
+    "fields": {
+      "ProdID": "PVLAP696",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 905,
+    "fields": {
+      "ProdID": "PVLAP697",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 906,
+    "fields": {
+      "ProdID": "PVLAP698",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 907,
+    "fields": {
+      "ProdID": "PVLAP699",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 908,
+    "fields": {
+      "ProdID": "PVLAP700",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 909,
+    "fields": {
+      "ProdID": "PVLAP701",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 910,
+    "fields": {
+      "ProdID": "PVLAP702",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 911,
+    "fields": {
+      "ProdID": "PVLAP703",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 912,
+    "fields": {
+      "ProdID": "PVLAP704",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 913,
+    "fields": {
+      "ProdID": "PVLAP322",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 914,
+    "fields": {
+      "ProdID": "PVLAP707",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 915,
+    "fields": {
+      "ProdID": "PVLAP366",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 916,
+    "fields": {
+      "ProdID": "PVLAP367",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 917,
+    "fields": {
+      "ProdID": "PVLAP368",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 918,
+    "fields": {
+      "ProdID": "PVLAP710",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 919,
+    "fields": {
+      "ProdID": "PVLAP711",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 920,
+    "fields": {
+      "ProdID": "PVLAP713",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 921,
+    "fields": {
+      "ProdID": "PVLAP714",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 922,
+    "fields": {
+      "ProdID": "PVLAP715",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 923,
+    "fields": {
+      "ProdID": "PVLAP716",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 924,
+    "fields": {
+      "ProdID": "PVLAP717",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 925,
+    "fields": {
+      "ProdID": "PVLAP718",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 926,
+    "fields": {
+      "ProdID": "PVLAP719",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 927,
+    "fields": {
+      "ProdID": "PVLAP720",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 928,
+    "fields": {
+      "ProdID": "PVLAP721",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 929,
+    "fields": {
+      "ProdID": "PVLAP722",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 930,
+    "fields": {
+      "ProdID": "PVLAP723",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 931,
+    "fields": {
+      "ProdID": "PVLAP725",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 932,
+    "fields": {
+      "ProdID": "PVLAP726",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 933,
+    "fields": {
+      "ProdID": "PVLAP727",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 934,
+    "fields": {
+      "ProdID": "PVLAP728",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 935,
+    "fields": {
+      "ProdID": "PVLAP729",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 936,
+    "fields": {
+      "ProdID": "PVLAP730",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 937,
+    "fields": {
+      "ProdID": "PVLAP731",
+      "FeatureName": "Văn phòng"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 938,
+    "fields": {
+      "ProdID": "PVLAP2",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 939,
+    "fields": {
+      "ProdID": "PVLAP8",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 940,
+    "fields": {
+      "ProdID": "PVLAP15",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 941,
+    "fields": {
+      "ProdID": "PVLAP16",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 942,
+    "fields": {
+      "ProdID": "PVLAP18",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 943,
+    "fields": {
+      "ProdID": "PVLAP25",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 944,
+    "fields": {
+      "ProdID": "PVLAP26",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 945,
+    "fields": {
+      "ProdID": "PVLAP27",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 946,
+    "fields": {
+      "ProdID": "PVLAP41",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 947,
+    "fields": {
+      "ProdID": "PVLAP56",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 948,
+    "fields": {
+      "ProdID": "PVLAP54",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 949,
+    "fields": {
+      "ProdID": "PVLAP51",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 950,
+    "fields": {
+      "ProdID": "PVLAP100",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 951,
+    "fields": {
+      "ProdID": "PVLAP109",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 952,
+    "fields": {
+      "ProdID": "PVLAP220",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 953,
+    "fields": {
+      "ProdID": "PVLAP141",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 954,
+    "fields": {
+      "ProdID": "PVLAP173",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 955,
+    "fields": {
+      "ProdID": "PVLAP172",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 956,
+    "fields": {
+      "ProdID": "PVLAP178",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 957,
+    "fields": {
+      "ProdID": "PVLAP192",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 958,
+    "fields": {
+      "ProdID": "PVLAP345",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 959,
+    "fields": {
+      "ProdID": "PVLAP334",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 960,
+    "fields": {
+      "ProdID": "PVLAP362",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 961,
+    "fields": {
+      "ProdID": "PVLAP351",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 962,
+    "fields": {
+      "ProdID": "PVLAP443",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 963,
+    "fields": {
+      "ProdID": "PVLAP444",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 964,
+    "fields": {
+      "ProdID": "PVLAP452",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 965,
+    "fields": {
+      "ProdID": "PVLAP490",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 966,
+    "fields": {
+      "ProdID": "PVLAP535",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 967,
+    "fields": {
+      "ProdID": "PVLAP548",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 968,
+    "fields": {
+      "ProdID": "PVLAP610",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 969,
+    "fields": {
+      "ProdID": "PVLAP616",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 970,
+    "fields": {
+      "ProdID": "PVLAP631",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 971,
+    "fields": {
+      "ProdID": "PVLAP361",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 972,
+    "fields": {
+      "ProdID": "PVLAP632",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 973,
+    "fields": {
+      "ProdID": "PVLAP633",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 974,
+    "fields": {
+      "ProdID": "PVLAP634",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 975,
+    "fields": {
+      "ProdID": "PVLAP635",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 976,
+    "fields": {
+      "ProdID": "PVLAP636",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 977,
+    "fields": {
+      "ProdID": "PVLAP649",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 978,
+    "fields": {
+      "ProdID": "PVLAP686",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 979,
+    "fields": {
+      "ProdID": "PVLAP687",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 980,
+    "fields": {
+      "ProdID": "PVLAP688",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 981,
+    "fields": {
+      "ProdID": "PVLAP322",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  },
+  {
+    "model": "store.feature",
+    "pk": 982,
+    "fields": {
+      "ProdID": "PVLAP725",
+      "FeatureName": "Thiết kế đồ hoạ"
+    }
+  }
+]

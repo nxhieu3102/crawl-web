@@ -25,7 +25,7 @@ CUSTOM_HEADERS = [
 ]
 
 class PVLaptopLinkSpider(scrapy.Spider):
-    name = 'PVLaptop'
+    name = 'PVLaptopLink'
     page_number = 2
     start_urls = [
         'https://phongvu.vn/c/laptop?page=1'
@@ -44,14 +44,15 @@ class PVLaptopLinkSpider(scrapy.Spider):
             instance['ImageLink'] = ''
             instance['SalePrice'] = ''
             instance['NormalPrice']= ''
-            instance['Type'] = '',
+            instance['Type'] = ''
+            instance['FeatureDetail'] = ''
             instance['ProductLink'] = 'https://phongvu.vn' + item
             yield instance
             
         next_page = 'https://phongvu.vn/c/laptop?page=' + str(self.page_number)
-        if self.page_number <= 1:
+        if self.page_number <= 20:
             self.page_number += 1
-            yield response.follow(url = next_page, headers = choice(CUSTOM_HEADERS), callback = self.parse)
+            yield response.follow(url = next_page, callback = self.parse, headers = choice(CUSTOM_HEADERS))
  
 class PVLaptopDetailSpider(scrapy.Spider):
     loaded = ''
@@ -70,15 +71,34 @@ class PVLaptopDetailSpider(scrapy.Spider):
         instance = ProductItem()
         
         instance['ProductID'] = 'PVLAP' + str(self.index)
-        instance['ProductName'] = response.css('.css-4kh4rf::text').extract()[0]
         
-        instance['BrandName'] = response.css('.css-n67qkj::text').extract()[0]
+        tmp = response.css('.css-4kh4rf::text').extract()
+        if len(tmp):
+            instance['ProductName'] = tmp[0]
+        else: instance['ProductName'] = ''
+        #instance['ProductName'] = response.css('.css-4kh4rf::text').extract()[0]
+        
+        tmp = response.css('.css-n67qkj::text').extract()
+        if len(tmp):
+            instance['BrandName'] = tmp[0]
+        else: instance['BrandName'] = ''
+        #instance['BrandName'] = response.css('.css-n67qkj::text').extract()[0]
         instance['ShopName'] = 'PhongVu'
         
-        instance['ImageLink'] = response.css('.css-j4683g img::attr(src)').extract()[0]
+        tmp = response.css('.css-j4683g img::attr(src)').extract()
+        if len(tmp):
+            instance['ImageLink'] = tmp[0]
+        else: instance['ImageLink'] = ''
+        
+        #instance['ImageLink'] = response.css('.css-j4683g img::attr(src)').extract()[0]
         instance['ProductLink'] = self.loaded[self.index - 1]['ProductLink']
-
-        instance['SalePrice'] = response.css('.css-1q5zfcu .att-product-detail-latest-price::text').extract()[0]
+        print(instance['ProductLink'])
+        
+        tmp = response.css('.css-1q5zfcu .att-product-detail-latest-price::text').extract()
+        if len(tmp):
+            instance['SalePrice'] = tmp[0]
+        else: instance['SalePrice'] = ''
+        #instance['SalePrice'] = response.css('.css-1q5zfcu .att-product-detail-latest-price::text').extract()[0]
         
         temp = response.css('.css-1q5zfcu .att-product-detail-retail-price::text').extract()
         if len(temp) == 0:

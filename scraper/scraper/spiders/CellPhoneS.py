@@ -10,9 +10,32 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.chrome.options import Options
 import re
+import csv
 
 options = Options()
 options.add_argument("--headless")
+options.add_argument("--disable-gpu");
+
+CUSTOM_HEADERS = [
+    {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36",
+    },
+    {
+        "User-Agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-G928X Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36",
+    },
+    {
+        "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:15.0) Gecko/20100101 Firefox/15.0.1",
+    },
+    {
+        "User-Agent": "Mozilla/5.0 (PlayStation 4 3.11) AppleWebKit/537.73 (KHTML, like Gecko)",
+    },
+    {
+        "User-Agent": "Dalvik/2.1.0 (Linux; U; Android 6.0.1; Nexus Player Build/MMB29T)",
+    },
+    {
+        "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1",
+    },
+]
 
 class CPSLaptopLinkSpider(scrapy.Spider):
     name = 'CPSLaptopLink'
@@ -42,17 +65,24 @@ class CPSLaptopLinkSpider(scrapy.Spider):
             yield instance
         
 class CPSLaptopDetailSpider(scrapy.Spider):
-    loaded = ''
-    with open('./scraper/links/cps/laptop.json') as value:
+    '''
+    with open('./scraper/links/cps/laptop.csv') as value:
         loaded = json.load(value)
+    '''
+    file = open('./scraper/links/cps/laptop.csv')
+    csvreader = csv.reader(file)
+
+    loaded = []
+    for row in csvreader:
+        loaded.append(row)
         
     name = 'CPSLaptopDetail'
-    index = 82
+    index = 1
     
-    print(len(loaded))
     
     start_urls = [
-        loaded[81]['ProductLink']
+        #loaded[60]['ProductLink']
+        loaded[0][0]
     ]
     
     def __init__(self):
@@ -77,7 +107,7 @@ class CPSLaptopDetailSpider(scrapy.Spider):
         #layout-desktop > div.cps-container.cps-body > div:nth-child(2) > div > section > div > div.box-header.is-flex.is-align-items-center.box-header-desktop > div.box-product-name > h1
         try:
             instance['ProductName'] = self.driver.find_element(By.CSS_SELECTOR,'div.box-product-name > h1').text.strip()
-        except NoSuchElementException as e:
+        except NoSuchElementException:
             instance['ProductName'] = ''
         
         
@@ -86,26 +116,37 @@ class CPSLaptopDetailSpider(scrapy.Spider):
             instance['BrandName'] = self.driver.find_element(By.CSS_SELECTOR,'#breadcrumbs > div.block-breadcrumbs.affix > div > ul > li:nth-child(3) > a').text.upper()
             if instance['BrandName'] == 'MAC':
                 instance['BrandName'] = 'APPLE'
-        except NoSuchElementException as e:
+        except NoSuchElementException:
             instance['BrandName'] = ''
+            if instance['ProductName']:
+                brands = ['macbook' , 'asus' , 'hp' , 'lenovo' , 'acer' , 'dell' ,
+                    'msi' , 'surface' , 'itel' , 'masstel' , 'chuwi' , 'lg']
+                for brand in brands:
+                    if brand.upper() in instance['ProductName'].upper():
+                        if brand == 'macbook':
+                            brand = 'APPLE'
+                        instance['BrandName'] = brand.upper()
+                        break
             
         instance['ShopName'] = 'CellPhoneS'
         
         try:
             instance['ImageLink'] = self.driver.find_element(By.XPATH,'//*[@id="layout-desktop"]/div[3]/div[2]/div/section/div/div[2]/div[1]/div/div[1]/div[1]/div[1]/div[1]/div/img').get_attribute('src')
-        except NoSuchElementException as e:
+        except NoSuchElementException:
             instance['ImageLink'] = ''
         
-        instance['ProductLink'] = self.loaded[self.index - 1]['ProductLink']
+        instance['ProductLink'] = self.loaded[self.index - 1][0]#self.loaded[self.index - 1]['ProductLink']
+        
+        print(instance['ProductLink'])
         
         try:
             instance['SalePrice'] = self.driver.find_element(By.CSS_SELECTOR,'.product__price--show').text
-        except NoSuchElementException as e:
+        except NoSuchElementException:
             instance['SalePrice'] = ''
         
         try:
             instance['NormalPrice'] = self.driver.find_element(By.CSS_SELECTOR,'.product__price--through').text
-        except NoSuchElementException as e:
+        except NoSuchElementException:
             instance['NormalPrice'] = instance['SalePrice']
             
         instance['Type'] = 'Máy tính cá nhân'
@@ -126,11 +167,12 @@ class CPSLaptopDetailSpider(scrapy.Spider):
             try:
                 pattern = self.driver.find_element(By.CSS_SELECTOR, selector.format(i) + ' > p').text
                 detail = self.driver.find_element(By.CSS_SELECTOR, selector.format(i) + ' > div').text
-                for key in mapping.keys():
-                    if pattern == key:
-                        instance['ConfigDetail'][mapping[pattern]] = detail
-                        break
-            except NoSuchElementException as e:
+                #for key in mapping.keys():
+                    #if pattern == key:
+                if pattern in mapping:
+                    instance['ConfigDetail'][mapping[pattern]] = detail
+                else: instance['ConfigDetail'][pattern] = detail
+            except NoSuchElementException:
                 pass
         
         instance['PromotionDetail'] = []
@@ -139,15 +181,17 @@ class CPSLaptopDetailSpider(scrapy.Spider):
             try:
                 detail = self.driver.find_element(By.CSS_SELECTOR, selector.format(i)).text
                 instance['PromotionDetail'].append(detail)
-            except NoSuchElementException as e:
+            except NoSuchElementException:
                 pass 
             
         instance['FeatureDetail'] = []
             
         yield instance
         
+        #print(instance)
+        
         if self.index < len(self.loaded):
-            next_page = self.loaded[self.index]['ProductLink']
+            next_page = self.loaded[self.index][0]#['ProductLink']
         else: next_page = ''
         
         if self.index <= len(self.loaded) - 1:
@@ -330,15 +374,19 @@ class CPSPhoneLinkSpider(scrapy.Spider):
             yield instance
          
 class CPSPhoneDetailSpider(scrapy.Spider):
-    loaded = ''
-    with open('./scraper/links/cps/phone.json') as value:
-        loaded = json.load(value)
+    file = open('./scraper/links/cps/phone.csv')
+    csvreader = csv.reader(file)
+    
+    loaded = []
+    for row in csvreader:
+        loaded.append(row)
         
     name = 'CPSPhoneDetail'
     index = 1
     
+    
     start_urls = [
-        loaded[0]['ProductLink']
+        loaded[0][0]
     ]
     
     def __init__(self):
@@ -362,31 +410,41 @@ class CPSPhoneDetailSpider(scrapy.Spider):
         
         try:
             instance['ProductName'] = self.driver.find_element(By.CSS_SELECTOR,'div.box-product-name > h1').text.strip()
-        except NoSuchElementException as e:
+        except NoSuchElementException:
             instance['ProductName'] = ''
             
         try:
             instance['BrandName'] = self.driver.find_element(By.CSS_SELECTOR,'#breadcrumbs > div.block-breadcrumbs.affix > div > ul > li:nth-child(3) > a').text.upper()
-        except NoSuchElementException as e:
+        except NoSuchElementException:
             instance['BrandName'] = ''
+            if instance['ProductName']:
+                brands = ['ipad' , 'samsung' , 'oppo' , 'xiaomi' ,
+                    'nokia' , 'masstel', 'lenovo']
+                
+                for brand in brands:
+                    if brand.upper() in instance['ProductName'].upper():
+                        if brand == 'ipad':
+                            brand = 'APPLE'
+                        instance['BrandName'] = brand.upper()
+                        break
             
         instance['ShopName'] = 'CellPhoneS'
         
         try:
             instance['ImageLink'] = self.driver.find_element(By.XPATH,'//*[@id="layout-desktop"]/div[3]/div[2]/div/section/div/div[2]/div[1]/div/div[1]/div[1]/div[1]/div[1]/div/img').get_attribute('src')
-        except NoSuchElementException as e:
+        except NoSuchElementException:
             instance['ImageLink'] = ''
         
-        instance['ProductLink'] = self.loaded[self.index - 1]['ProductLink']
+        instance['ProductLink'] = self.loaded[self.index - 1][0]
         
         try:
             instance['SalePrice'] = self.driver.find_element(By.CSS_SELECTOR,'.product__price--show').text
-        except NoSuchElementException as e:
+        except NoSuchElementException:
             instance['SalePrice'] = ''
         
         try:
             instance['NormalPrice'] = self.driver.find_element(By.CSS_SELECTOR,'.product__price--through').text
-        except NoSuchElementException as e:
+        except NoSuchElementException:
             instance['NormalPrice'] = instance['SalePrice']
             
         instance['Type'] = 'Điện thoại'
@@ -410,11 +468,10 @@ class CPSPhoneDetailSpider(scrapy.Spider):
             try:
                 pattern = self.driver.find_element(By.CSS_SELECTOR, selector.format(i) + ' > p').text
                 detail = self.driver.find_element(By.CSS_SELECTOR, selector.format(i) + ' > div').text
-                for key in mapping.keys():
-                    if pattern == key:
-                        instance['ConfigDetail'][mapping[pattern]] = detail
-                        break
-            except NoSuchElementException as e:
+                if pattern in mapping:
+                    instance['ConfigDetail'][mapping[pattern]] = detail
+                else: instance['ConfigDetail'][pattern] = detail
+            except NoSuchElementException:
                 pass
         
         instance['PromotionDetail'] = []
@@ -423,7 +480,7 @@ class CPSPhoneDetailSpider(scrapy.Spider):
             try:
                 detail = self.driver.find_element(By.CSS_SELECTOR, selector.format(i)).text
                 instance['PromotionDetail'].append(detail)
-            except NoSuchElementException as e:
+            except NoSuchElementException:
                 pass 
             
         instance['FeatureDetail'] = []
@@ -431,7 +488,7 @@ class CPSPhoneDetailSpider(scrapy.Spider):
         yield instance
         
         if self.index < len(self.loaded):
-            next_page = self.loaded[self.index]['ProductLink']
+            next_page = self.loaded[self.index][0]
         else: next_page = ''
         
         if self.index <= len(self.loaded) - 1:

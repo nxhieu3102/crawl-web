@@ -73,6 +73,7 @@ class ScraperPipeline:
                     product.SalePrice = item['SalePrice']
                     product.NormalPrice = item['NormalPrice']
                     product.save()
+                    print('Hello', product.ProductID)
                 except ObjectDoesNotExist:
                     pass
             elif item['FeatureDetail'] is not None:
@@ -87,6 +88,7 @@ class ScraperPipeline:
                             ProdInfo = item['ProductLink'],
                             ErrorDetail = e
                     )
+        
         return item
     
     def close_spider(self, spider):

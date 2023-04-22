@@ -14,6 +14,8 @@ import re
 
 options = Options()
 options.add_argument("--headless")
+options.add_argument("--disable-gpu");
+
 
 class FPTLaptopLinkSpider(scrapy.Spider):
     name = 'FPTLaptopLink'
@@ -39,6 +41,15 @@ class FPTLaptopLinkSpider(scrapy.Spider):
                  break
 
         for item in self.driver.find_elements(By.CSS_SELECTOR,'.cdt-product__info .cdt-product__name'):
+            instance['ProductID'] = None
+            instance['ProductName'] = ''
+            instance['BrandName'] = ''
+            instance['ShopName'] = ''
+            instance['ImageLink'] = ''
+            instance['SalePrice'] = ''
+            instance['NormalPrice']= ''
+            instance['Type'] = ''
+            instance['FeatureDetail'] = ''
             instance['ProductLink'] = item.get_attribute('href')
             yield instance
         
@@ -73,25 +84,47 @@ class FPTLaptopDetailSpider(scrapy.Spider):
                  break
 
         instance['ProductID'] = 'FPTLAP' + str(self.index)
-        instance['ProductName'] = self.driver.find_element(By.CSS_SELECTOR, '.st-name').text
-        pattern = r'\(.*?\)'
-        instance['ProductName'] = re.sub(pattern,'',instance['ProductName'])
+        
+        try:
+            instance['ProductName'] = self.driver.find_element(By.CSS_SELECTOR, '.st-name').text
+            pattern = r'\(.*?\)'
+            instance['ProductName'] = re.sub(pattern,'',instance['ProductName'])
+        except NoSuchElementException:
+            instance['ProductName'] = ''
         #root > main > div > div.l-pd-header > div:nth-child(1) > div > ol > li.breadcrumb-item.active > a
-        instance['BrandName'] = self.driver.find_element(By.CSS_SELECTOR, 'li.breadcrumb-item.active > a').text.upper()
+        try:
+            instance['BrandName'] = self.driver.find_element(By.CSS_SELECTOR, 'li.breadcrumb-item.active > a').text
+            instance['BrandName'] = instance['BrandName'].upper()
+        except NoSuchElementException:
+            if instance['ProductName']:
+                brands = ['macbook' , 'asus' , 'hp' , 'lenovo' , 'acer' , 'dell' ,
+                    'msi' , 'surface' , 'itel' , 'masstel' , 'chuwi' , 'lg', 'gigabyte']
+                for brand in brands:
+                    if brand.upper() in instance['ProductName'].upper():
+                        if brand == 'macbook':
+                            brand = 'APPLE'
+                        instance['BrandName'] = brand.upper()
+                        break
+            else: instance['BrandName'] = ''
+                
         instance['ShopName'] = 'FPTShop'
         
-        instance['ImageLink'] = self.driver.find_element(By.CSS_SELECTOR, 'div.swiper-slide.swiper-slide-active > img').get_attribute('src')
+        try:
+            instance['ImageLink'] = self.driver.find_element(By.CSS_SELECTOR, 'div.swiper-slide.swiper-slide-active > img').get_attribute('src')
+        except NoSuchElementException:
+            instance['ImageLink'] = ''
+        
         instance['ProductLink'] = self.loaded[self.index - 1]['ProductLink']
 
-        
+        print(instance['ProductLink'])
         #root > main > div > div.l-pd-header.selectorgadget_selected > div:nth-child(2) > div.l-pd-row.clearfix > div.l-pd-right > div.st-price > div > div.st-price-main
         try:
             instance['SalePrice'] = self.driver.find_element(By.CSS_SELECTOR, 'div.st-price > div > div.st-price-main').text
-        except NoSuchElementException as e:
+        except NoSuchElementException:
             instance['SalePrice'] = ''
         try:
             instance['NormalPrice'] = self.driver.find_element(By.CSS_SELECTOR, 'div.st-price > div > div.st-price-sub > strike').text
-        except NoSuchElementException as e:
+        except NoSuchElementException:
             instance['NormalPrice'] = instance['SalePrice']
 
         mapping = {
@@ -111,7 +144,8 @@ class FPTLaptopDetailSpider(scrapy.Spider):
             try:
                 pattern = self.driver.find_element(By.CSS_SELECTOR, selector.format(i) + ' > td:nth-child(1)').text
                 detail = self.driver.find_element(By.CSS_SELECTOR, selector.format(i) + ' > td:nth-child(2)').text
-                instance['ConfigDetail'][mapping[pattern]] = detail
+                if pattern in mapping:
+                    instance['ConfigDetail'][mapping[pattern]] = detail
             except NoSuchElementException as e:
                 pass
                 
@@ -310,6 +344,15 @@ class FPTPhoneLinkSpider(scrapy.Spider):
                  break
 
         for item in self.driver.find_elements(By.CSS_SELECTOR,'.cdt-product__info .cdt-product__name'):
+            instance['ProductID'] = None
+            instance['ProductName'] = ''
+            instance['BrandName'] = ''
+            instance['ShopName'] = ''
+            instance['ImageLink'] = ''
+            instance['SalePrice'] = ''
+            instance['NormalPrice']= ''
+            instance['Type'] = ''
+            instance['FeatureDetail'] = ''
             instance['ProductLink'] = item.get_attribute('href')
             yield instance
         
@@ -320,10 +363,10 @@ class FPTPhoneDetailSpider(scrapy.Spider):
         loaded = json.load(value)
         
     name = 'FPTPhoneDetail'
-    index = 1
+    index = 81
     
     start_urls = [
-        loaded[0]['ProductLink']
+        loaded[80]['ProductLink']
     ]
     
     def __init__(self):
@@ -344,13 +387,35 @@ class FPTPhoneDetailSpider(scrapy.Spider):
                  break
 
         instance['ProductID'] = 'FPTPHONE' + str(self.index)
-        instance['ProductName'] = self.driver.find_element(By.CSS_SELECTOR, '.st-name').text
-        pattern = r'\(.*?\)'
-        instance['ProductName'] = re.sub(pattern,'',instance['ProductName'])
+        try:
+            instance['ProductName'] = self.driver.find_element(By.CSS_SELECTOR, '.st-name').text
+            pattern = r'\(.*?\)'
+            instance['ProductName'] = re.sub(pattern,'',instance['ProductName'])
+        except NoSuchElementException:
+            instance['ProductName'] = ''
         #root > main > div > div.l-pd-header > div:nth-child(1) > div > ol > li.breadcrumb-item.active > a
-        instance['BrandName'] = self.driver.find_element(By.CSS_SELECTOR, 'li.breadcrumb-item.active > a').text.upper()
+        try:
+            instance['BrandName'] = self.driver.find_element(By.CSS_SELECTOR, 'li.breadcrumb-item.active > a').text.upper()
+        except NoSuchElementException:
+            if instance['ProductName']:
+                brands = ['iphone' , 'samsung' , 'oppo' , 'xiaomi' , 'vivo' , 'realme' , 
+                  'nokia' , 'tcl' , 'mobell' , 'itel' , 'masstel']
+                for brand in brands:
+                    if brand.upper() in instance['ProductName'].upper():
+                        if brand == 'iphone':
+                            brand = 'APPLE'
+                        instance['BrandName'] = brand.upper()
+                        break
+            else: instance['BrandName'] = ''
+                
+                
         instance['ShopName'] = 'FPTShop'
-        instance['ImageLink'] = self.driver.find_element(By.CSS_SELECTOR, 'div.swiper-slide.swiper-slide-active > img').get_attribute('src')
+        
+        try:
+            instance['ImageLink'] = self.driver.find_element(By.CSS_SELECTOR, 'div.swiper-slide.swiper-slide-active > img').get_attribute('src')
+        except NoSuchElementException:
+            instance['ImageLink'] = ''
+        
         instance['ProductLink'] = self.loaded[self.index - 1]['ProductLink']
 
         
@@ -364,6 +429,14 @@ class FPTPhoneDetailSpider(scrapy.Spider):
         except NoSuchElementException as e:
             instance['NormalPrice'] = instance['SalePrice']
        
+        mapping = {
+            "Bộ nhớ trong": "Lưu trữ",
+            "Màn hình": "Màn hình",
+            "Hệ điều hành": "Hệ điều hành",
+            "Pin": "Pin",
+            "Camera sau": "Camera sau",
+            "Camera Selfie": "Camera trước"
+        }
         #ConfigPattern = ["Màn hình", "Camera sau", "Camera Selfie", "RAM", "Bộ nhớ trong", "CPU", "Pin","Thẻ sim","Hệ điều hành"]
         instance['ConfigDetail'] = {}
         #root > main > div > div.l-pd-body > div > div.l-pd-body__wrapper > div.l-pd-body__right > div:nth-child(1) > div > table > tbody > tr:nth-child(1) > td:nth-child(1)
@@ -373,8 +446,10 @@ class FPTPhoneDetailSpider(scrapy.Spider):
             try:
                 pattern = self.driver.find_element(By.CSS_SELECTOR, selector.format(i) + ' > td:nth-child(1)').text
                 detail = self.driver.find_element(By.CSS_SELECTOR, selector.format(i) + ' > td:nth-child(2)').text
-                instance['ConfigDetail'][pattern] = detail
-            except NoSuchElementException as e:
+                if pattern in mapping:
+                    instance['ConfigDetail'][mapping[pattern]] = detail
+                else: instance['ConfigDetail'][pattern] = detail
+            except NoSuchElementException:
                 pass
                 
         instance['Type'] = 'Điện thoại'

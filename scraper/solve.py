@@ -1,4 +1,4 @@
-'''from selenium import webdriver
+from selenium import webdriver
 import time
 from selenium.webdriver.common.by import By
 import json
@@ -41,9 +41,8 @@ for element in elements:
     
 
 file.close()
-
-driver.quit()
 '''
+driver.quit()
 from selenium import webdriver
 import time
 from selenium.webdriver.common.by import By
@@ -75,3 +74,28 @@ for element in elements:
 file.close()
 
 driver.quit()
+
+import json
+import csv
+
+loaded = ''
+with open('phone.json','r') as file:
+    loaded = json.load(file)
+
+res = []
+tmp = []
+for i in range(len(loaded)):
+    if loaded[i]['ProductLink'] not in tmp:
+        tmp.append(loaded[i]['ProductLink'])
+
+        res.append([loaded[i]['ProductLink']])
+            
+#fieldnames = res[0].keys()
+print(len(res))
+header = ['ProductLink']
+    # Write the list of dictionaries to the CSV file
+with open('phonelink.csv', 'w') as csvfile:
+    writer = csv.writer(csvfile)
+    writer.writerow(header)  # Write the fieldnames as the first row (header) in the CSV file
+    writer.writerows(res)  # Write the data rows to the CSV file
+'''

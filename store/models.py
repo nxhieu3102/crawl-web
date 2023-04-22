@@ -11,8 +11,8 @@ class Product(models.Model):
     ImageLink = models.URLField(max_length = 255) #https://...
     ProductLink = models.URLField(max_length = 255, unique = True) #https://...
     
-    SalePrice = models.CharField(max_length = 12, null = True) #31000000
-    NormalPrice = models.CharField(max_length = 12, null = True) #35000000
+    SalePrice = models.CharField(max_length = 20, null = True) #31000000
+    NormalPrice = models.CharField(max_length = 20, null = True) #35000000
     
     Type = models.CharField(max_length = 25) #May tinh ca nhan
     
@@ -25,7 +25,7 @@ class Product(models.Model):
 class Configuration(models.Model):
     ProdID = models.ForeignKey(Product, on_delete = models.CASCADE) #PVLAP1
     ConfigName = models.CharField(max_length = 50) #ROM
-    Detail = models.CharField(max_length = 100) #512GB
+    Detail = models.CharField(max_length = 255) #512GB
     
 class Feature(models.Model):
     ProdID = models.ForeignKey(Product, on_delete = models.CASCADE) #PVLAP1
@@ -36,8 +36,8 @@ class Feature(models.Model):
 
 class Promotion(models.Model):
     ProdID = models.ForeignKey(Product, on_delete = models.CASCADE) #PVLAP1
-    Detail = models.CharField(max_length = 255) #Khuyến mãi khi mua kèm tai nghe, điện thoại ...
-
+    #Detail = models.CharField(max_length = 255) #Khuyến mãi khi mua kèm tai nghe, điện thoại ...
+    Detail = models.TextField()
 #This class is used for tracking bug in database
 class Errors(models.Model):
     ProdInfo = models.CharField(max_length = 255) #https://phongvu.vn/....
