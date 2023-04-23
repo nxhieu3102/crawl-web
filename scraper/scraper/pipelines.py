@@ -47,6 +47,7 @@ class ScraperPipeline:
                 )
                 
         if product_created == True:
+            print('create ', item['ProductID'])
             if item['ShopName'] == 'PhongVu':
                 for key, value in PVConfigFixed(item['ConfigDetail']).items():
                     Configuration.objects.create(
@@ -73,7 +74,7 @@ class ScraperPipeline:
                     product.SalePrice = item['SalePrice']
                     product.NormalPrice = item['NormalPrice']
                     product.save()
-                    print('Hello', product.ProductID)
+                    print('updated', item['ProductID'])
                 except ObjectDoesNotExist:
                     pass
             elif item['FeatureDetail'] is not None:

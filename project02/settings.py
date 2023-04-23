@@ -41,7 +41,9 @@ INSTALLED_APPS = [
     #django app
     'store',
     'store_api',
-    'rest_framework'
+    'rest_framework',
+    'django.contrib.postgres'
+
     #for scheduler
 ]
 

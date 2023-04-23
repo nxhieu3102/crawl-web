@@ -10,7 +10,7 @@ from rest_framework.renderers import JSONRenderer
 from django.db.models import CharField
 #from django.db.models.functions import Search
 
-CharField.register_lookup()
+#CharField.register_lookup()
 
 # class ProductList(generics.ListCreateAPIView):
 #     queryset = Product.objects.all()
@@ -58,11 +58,9 @@ class ProductList(APIView):
         search = request.GET.get('search')
         if search != None:
             search = " ".join(search.split('+'))
-            print(search)
             from django.contrib.postgres.search import TrigramSimilarity
-            #results = Product.objects.annotate(similarity=TrigramSimilarity('ProductName', search),).filter(similarity__gte=0.1).order_by('-similarity')
-            results = Product.objects.filter(ProductName__search = search)
-            print(len(results))
+            results = Product.objects.annotate(similarity=TrigramSimilarity('ProductName', search),).filter(similarity__gte=0.1).order_by('-similarity')
+            #results = Product.objects.filter(ProductName__search = search)
             dataList = []
             for item in results:
                 dataList.append(item)
