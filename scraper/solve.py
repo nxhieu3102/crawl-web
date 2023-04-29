@@ -5,7 +5,7 @@ import json
 import csv
 
 
-
+'''
 baseUrl = 'https://www.thegioididong.com/laptop'
 tailUrl = [
     '?g=laptop-gaming#c=44&p=37699&o=17&pi=2', 
@@ -41,7 +41,7 @@ for element in elements:
     
 
 file.close()
-'''
+
 driver.quit()
 from selenium import webdriver
 import time
@@ -74,12 +74,12 @@ for element in elements:
 file.close()
 
 driver.quit()
-
+'''
 import json
 import csv
 
 loaded = ''
-with open('phone.json','r') as file:
+with open('abc.json','r') as file:
     loaded = json.load(file)
 
 res = []
@@ -94,8 +94,7 @@ for i in range(len(loaded)):
 print(len(res))
 header = ['ProductLink']
     # Write the list of dictionaries to the CSV file
-with open('phonelink.csv', 'w') as csvfile:
+with open('laptoplink.csv', 'w') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow(header)  # Write the fieldnames as the first row (header) in the CSV file
     writer.writerows(res)  # Write the data rows to the CSV file
-'''

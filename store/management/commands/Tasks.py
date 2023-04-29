@@ -13,7 +13,7 @@ class Command(BaseCommand):
 
         os.chdir(str(django_path)+"/scraper")
         #os.system("python3 scheduler.py")
-        os.system("scrapy crawl PVLaptopDetail")
+        os.system("scrapy crawl FPTPhoneLink -o abc.json")
         
         
         
