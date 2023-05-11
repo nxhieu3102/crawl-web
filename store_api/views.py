@@ -106,8 +106,8 @@ class ProductList(APIView):
                     if i.ConfigName in response_data['Configuration']:
                         try:
                             vectorizer = TfidfVectorizer()
-                            vectors = vectorizer.fit_transform(
-                                [i.Detail, response_data['Configuration'][i.ConfigName]])
+
+                            vectors = vectorizer.fit_transform([i.Detail, response_data['Configuration'][i.ConfigName]])
                             relevantRating += cosine_similarity(vectors)[0][1]
                         except ValueError:
                             continue
@@ -182,7 +182,7 @@ class ProductList(APIView):
         if feature != None:
             temp = []
             featureMapping = {
-                'doanhnhan': ['Doanh nghiệp', 'Doanh nhân'],
+                'doanhnhan': 'Doanh nhân',
                 'gaming': 'Gaming',
                 'thietkedohoa': 'Thiết kế đồ hoạ',
                 'vanphong': 'Văn phòng',

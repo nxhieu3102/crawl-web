@@ -18,7 +18,10 @@ def PVConfigFixed(data):
                     elif item.endswith(" Pin rời"):
                         item = item.replace(" Pin rời","")
                         item = item.replace("- ","Pin: ")
-                    dict[i] = item.split(': ')[1].rstrip()
+                    try:
+                        dict[i] = item.split(': ')[1].rstrip()
+                    except IndexError:
+                        continue;
                     if i == "Màn hình":
                         dict[i] = dict[i].replace('\"','inch')
     return dict

@@ -63,8 +63,6 @@ class FPTLaptopLinkSpider(scrapy.Spider):
         self.wait = WebDriverWait(self.driver, 10)
     
     def parse(self, response):
-        instance = ProductItem()
-        
         self.driver.get(response.url)
         check_height = self.driver.execute_script("return document.body.scrollHeight;")
         while True:

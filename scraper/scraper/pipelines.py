@@ -62,19 +62,42 @@ class ScraperPipeline:
                         ConfigName = key,
                         Detail = value
                     )
-        
-            Promotion.objects.create(
-                ProdID = product,
-                Detail = item['PromotionDetail']
-            )
+
+            if item['PromotionDetail'] is not None:
+                Promotion.objects.create(
+                    ProdID = product,
+                    Detail = item['PromotionDetail']
+                )
         else:
             if item['ProductID'] is not None:
                 try:
                     product = Product.objects.get(ProductLink = item['ProductLink'])
-                    product.SalePrice = item['SalePrice']
-                    product.NormalPrice = item['NormalPrice']
+                    tmp = ''
+                    if item['SalePrice'] != '' and item['NormalPrice'] != '':
+                        product.SalePrice = item['SalePrice']
+                        product.NormalPrice = item['NormalPrice']
+                        #product.save()
+                        #print('update price', item['ProductID'])
+                        tmp += item['ProductID'] + ': update price '
+                    if product.ProductName == '' and item['ProductName'] != '':
+                        product.ProductName = item['ProductName']
+                        #print('update productname')
+                        tmp += 'productname '
+                    if product.ShopName == '' and item['ShopName'] != '':
+                        product.ShopName = item['ShopName']
+                        #print('update shopname')
+                        tmp += 'shopname '
+                    if product.BrandName == '' and item['BrandName'] != '':
+                        product.BrandName = item['BrandName']
+                        #print('update brandname')
+                        tmp += 'brandname '
+                    if product.ImageLink == '' and item['ImageLink'] != '':
+                        product.ImageLink = item['ImageLink']
+                        #print('update imagelink')
+                        tmp += 'imagelink'
+                    if tmp != '':
+                        print(tmp)
                     product.save()
-                    print('updated', item['ProductID'])
                 except ObjectDoesNotExist:
                     pass
             elif item['FeatureDetail'] is not None:
@@ -89,6 +112,9 @@ class ScraperPipeline:
                             ProdInfo = item['ProductLink'],
                             ErrorDetail = e
                     )
+                    if feature:
+                        print('create')
+                    else: print('exist')
         
         return item
     

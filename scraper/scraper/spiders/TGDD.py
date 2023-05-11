@@ -10,6 +10,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.chrome.options import Options
 import re
+import csv
 
 options = Options()
 options.add_argument("--headless")
@@ -35,6 +36,22 @@ CUSTOM_HEADERS = [
     },
 ]
 
+def addLinkToCSV(fileLink, productLink):
+    with open(fileLink,'a') as fd:
+        writer = csv.writer(fd)
+        writer.writerow(productLink)
+        #fd.close()
+        
+def csvToList(fileLink):
+    file = open(fileLink)
+    csvreader = csv.reader(file)
+    header = next(csvreader)  
+    rows = []
+    for row in csvreader:
+        if row:
+            rows.append(row)
+    return rows
+
 class TGDDLaptopLinkSpider(scrapy.Spider):
     name = 'TGDDLaptopLink'
     
@@ -43,33 +60,39 @@ class TGDDLaptopLinkSpider(scrapy.Spider):
     ]
     
     def parse(self, response):
-        instance = ProductItem()
-        
+        #instance = ProductItem()
+        loaded = csvToList('./scraper/links/tgdd/laptop.csv')
+
         items = response.css('.__cate_44 > a.main-contain::attr(href)').extract()
         for item in items:
-            instance['ProductLink'] = 'https://thegioididong' + item
-            yield instance
+            # instance['ProductLink'] = 'https://thegioididong' + item
+            # yield instance
+            link = 'https://thegioididong' + item
+            flag = True
+            for i in loaded:
+                if i[0] == link:
+                    flag = False
+                    break
+            if flag:
+                addLinkToCSV('./scraper/links/tgdd/laptop.csv',[link])
 
 class TGDDLaptopDetailSpider(scrapy.Spider):
+    loaded = csvToList('./scraper/links/tgdd/laptop.csv')
     name = 'TGDDLaptopDetail'
-    
-    loaded = ''
-    with open('./scraper/links/tgdd/laptop.json') as value:
-        loaded = json.load(value)
     index = 1
-    
-    start_urls = [
-        loaded[0]['ProductLink'],
-    ]
         
+    start_urls = [
+        loaded[0][0]
+    ]
+    
     def parse(self, response):
         
-        print(response.url)
         
         instance = ProductItem()
         
         instance['ProductID'] = 'TGDDLAP' + str(self.index)
-        instance['ProductLink'] = self.loaded[self.index - 1]['ProductLink']
+        #instance['ProductLink'] = self.loaded[self.index - 1]['ProductLink']
+        instance['ProductLink'] = self.loaded[self.index - 1][0]
         
         instance['ProductName'] = response.css('section.detail h1::text').get()
         if instance['ProductName'] is None:
@@ -145,16 +168,36 @@ class TGDDLaptopDetailSpider(scrapy.Spider):
             instance['PromotionDetail'].append(text)
 
         instance['FeatureDetail'] = []
+        
+        temp = response.xpath('/html/body/section[1]/div[3]/div[2]/div[1]/div/a[1]/text()').get()
+        print(temp)
+        if temp and 'gb' in temp.lower():
+            tmp = response.xpath('/html/body/section[1]/div[3]/div[2]/div[1]/div/a[2]/@href').extract()
+            print(tmp)
+            if tmp:
+                tmp = 'https://thegioididong' + tmp[0]
+                print(tmp)
+                flag = True
+                for prodlink in self.loaded:
+                    if prodlink[0] == tmp:
+                        flag = False
+                        break
+                    
+                if flag:
+                    self.loaded.append([tmp])
+                    addLinkToCSV('./scraper/links/tgdd/laptop.csv',[tmp])
                 
         yield instance
-        
+
+        #print(self.loaded)
         if self.index < len(self.loaded):
-            next_page = self.loaded[self.index]['ProductLink']
+            next_page = self.loaded[self.index][0]
         else: next_page = ''
         
         if self.index <= len(self.loaded) - 1:
             self.index += 1
-            yield response.follow(next_page, callback = self.parse, headers = choice(CUSTOM_HEADERS))
+            print(self.index)
+            yield response.follow(next_page, callback = self.parse)#, headers = choice(CUSTOM_HEADERS))
 
 class TGDDLaptopGamingSpider(scrapy.Spider):
     name = 'TGDDLaptopGaming'

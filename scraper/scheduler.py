@@ -1,4 +1,5 @@
-from scraper.spiders.PhongVu import PVLaptopDetailSpider
+from scraper.spiders.PhongVu import PVLaptopDetailSpider, PVLaptopLinkSpider
+from scraper.spiders.FPTShop import FPTLaptopLinkSpider
 from scrapy.settings import Settings
 from scrapy.crawler import CrawlerProcess
 from apscheduler.schedulers.twisted import TwistedScheduler
@@ -11,8 +12,6 @@ process = CrawlerProcess(settings=crawler_settings)
 scheduler = TwistedScheduler()
 
 #Phong Vu scheduler 
-scheduler.add_job(process.crawl, 'interval', args = [PVLaptopDetailSpider], seconds = 86400)
-
-
+scheduler.add_job(process.crawl, 'interval', args = [PVLaptopLinkSpider], seconds = 120)
 scheduler.start()
 process.start(False)

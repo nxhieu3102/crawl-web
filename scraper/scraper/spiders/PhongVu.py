@@ -2,6 +2,7 @@ import scrapy
 from ..items import ProductItem
 import json
 from random import choice
+from ..LinkProcess import csvToList, addLinkToCSV
 
 CUSTOM_HEADERS = [
     {
@@ -32,38 +33,34 @@ class PVLaptopLinkSpider(scrapy.Spider):
     ]
     
     def parse(self, response):
+        loaded = csvToList('./scraper/links/pv/laptop.csv')
         
-        instance = ProductItem()
         items = response.css('.css-13w7uog .css-35xksx .css-pxdb0j::attr(href)').extract()
     
         for item in items:
-            instance['ProductID'] = None
-            instance['ProductName'] = ''
-            instance['BrandName'] = ''
-            instance['ShopName'] = ''
-            instance['ImageLink'] = ''
-            instance['SalePrice'] = ''
-            instance['NormalPrice']= ''
-            instance['Type'] = ''
-            instance['FeatureDetail'] = ''
-            instance['ProductLink'] = 'https://phongvu.vn' + item
-            yield instance
+            link = 'https://phongvu.vn' + item
+            flag = True
+            for i in loaded:
+                if i[0] == link:
+                    flag = False
+                    break
+            if flag:
+                addLinkToCSV('./scraper/links/pv/laptop.csv',[link])
             
         next_page = 'https://phongvu.vn/c/laptop?page=' + str(self.page_number)
-        if self.page_number <= 20:
+        if self.page_number <= 25:
             self.page_number += 1
             yield response.follow(url = next_page, callback = self.parse, headers = choice(CUSTOM_HEADERS))
  
 class PVLaptopDetailSpider(scrapy.Spider):
-    loaded = ''
-    with open('./scraper/links/pv/laptop.json') as value:
-        loaded = json.load(value)
+    loaded = csvToList('./scraper/links/pv/laptop.csv')
+
         
     name = 'PVLaptopDetail'
     index = 1
     
     start_urls = [
-        loaded[0]['ProductLink']
+        loaded[0][0]
     ]
             
     def parse(self, response):
@@ -76,13 +73,11 @@ class PVLaptopDetailSpider(scrapy.Spider):
         if len(tmp):
             instance['ProductName'] = tmp[0]
         else: instance['ProductName'] = ''
-        #instance['ProductName'] = response.css('.css-4kh4rf::text').extract()[0]
         
         tmp = response.css('.css-n67qkj::text').extract()
         if len(tmp):
             instance['BrandName'] = tmp[0]
         else: instance['BrandName'] = ''
-        #instance['BrandName'] = response.css('.css-n67qkj::text').extract()[0]
         instance['ShopName'] = 'PhongVu'
         
         tmp = response.css('.css-j4683g img::attr(src)').extract()
@@ -90,15 +85,12 @@ class PVLaptopDetailSpider(scrapy.Spider):
             instance['ImageLink'] = tmp[0]
         else: instance['ImageLink'] = ''
         
-        #instance['ImageLink'] = response.css('.css-j4683g img::attr(src)').extract()[0]
-        instance['ProductLink'] = self.loaded[self.index - 1]['ProductLink']
-        print(instance['ProductLink'])
+        instance['ProductLink'] = self.loaded[self.index - 1][0]
         
         tmp = response.css('.css-1q5zfcu .att-product-detail-latest-price::text').extract()
         if len(tmp):
             instance['SalePrice'] = tmp[0]
         else: instance['SalePrice'] = ''
-        #instance['SalePrice'] = response.css('.css-1q5zfcu .att-product-detail-latest-price::text').extract()[0]
         
         temp = response.css('.css-1q5zfcu .att-product-detail-retail-price::text').extract()
         if len(temp) == 0:
@@ -121,19 +113,19 @@ class PVLaptopDetailSpider(scrapy.Spider):
         yield instance
         
         if self.index < len(self.loaded):
-            next_page = self.loaded[self.index]['ProductLink']
+            next_page = self.loaded[self.index][0]
         else: next_page = ''
         
         if self.index <= len(self.loaded) - 1:
             self.index += 1
-            yield response.follow(next_page, callback = self.parse)
+            yield response.follow(next_page, callback = self.parse, headers = choice(CUSTOM_HEADERS))
 
 class PVLaptopDoanhnghiepSpider(scrapy.Spider):
     name = 'PVLaptopDoanhnghiep'
     start_urls = [
         'https://phongvu.vn/c/laptop?attributes.nhucausudung=26698&page=1'
     ]
-    page_number = 2
+    page_number = 1
     
     
     def parse(self, response):
@@ -152,20 +144,20 @@ class PVLaptopDoanhnghiepSpider(scrapy.Spider):
             instance['NormalPrice']= ''
             instance['Type'] = ''
             instance['ProductLink'] = 'https://phongvu.vn' + item
-            instance['FeatureDetail'] = 'Doanh nghiệp'
+            instance['FeatureDetail'] = 'Doanh nhân'
             yield instance
             
         next_page = 'https://phongvu.vn/c/laptop?attributes.nhucausudung=26698&page=' + str(self.page_number)
         if self.page_number <= 4:
             self.page_number += 1
-            yield response.follow(next_page, callback = self.parse)
+            yield response.follow(next_page, callback = self.parse, headers = choice(CUSTOM_HEADERS))
             
 class PVLaptopDoanhnhanSpider(scrapy.Spider):
     name = 'PVLaptopDoanhnhan'
     start_urls = [
         'https://phongvu.vn/c/laptop?attributes.nhucausudung=26702&page=1'
     ]
-    page_number = 2
+    page_number = 1
     
     
     def parse(self, response):
@@ -197,7 +189,7 @@ class PVLaptopGamingSpider(scrapy.Spider):
     start_urls = [
         'https://phongvu.vn/c/laptop?attributes.nhucausudung=26695&page=1'
     ]
-    page_number = 2
+    page_number = 1
     
     
     def parse(self, response):
@@ -229,7 +221,7 @@ class PVLaptopHocsinhsinhvienSpider(scrapy.Spider):
     start_urls = [
         'https://phongvu.vn/c/laptop?attributes.nhucausudung=26699&page=1'
     ]
-    page_number = 2
+    page_number = 1
     
     
     def parse(self, response):
@@ -263,7 +255,7 @@ class PVLaptopVanphongSpider(scrapy.Spider):
     start_urls = [
         'https://phongvu.vn/c/laptop?attributes.nhucausudung=26696&page=1'
     ]
-    page_number = 2
+    page_number = 1
     
     
     def parse(self, response):
@@ -297,7 +289,7 @@ class PVLaptopThietkedohoaSpider(scrapy.Spider):
     start_urls = [
         'https://phongvu.vn/c/laptop?attributes.nhucausudung=26697&page=1'
     ]
-    page_number = 2
+    page_number = 1
     
     
     def parse(self, response):
@@ -326,3 +318,4 @@ class PVLaptopThietkedohoaSpider(scrapy.Spider):
             self.page_number += 1
             yield response.follow(next_page, callback = self.parse)
             
+

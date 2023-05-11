@@ -11,6 +11,8 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.chrome.options import Options
 import re
 import csv
+from ..LinkProcess import csvToList, addLinkToCSV
+
 
 options = Options()
 options.add_argument("--headless")
@@ -495,3 +497,36 @@ class CPSPhoneDetailSpider(scrapy.Spider):
             self.index += 1
             yield response.follow(next_page, callback = self.parse)
 
+
+
+# class CPSLaptopLinkSpider(scrapy.Spider):
+#     name = 'CPSLaptopLink'
+#     start_urls = [
+#         'https://cellphones.com.vn/laptop.html'
+#     ]
+
+#     def __init__(self):
+#         self.driver = webdriver.Chrome(chrome_options=options)
+#         self.wait = WebDriverWait(self.driver, 10)
+    
+#     def parse(self, response):
+#         loaded = csvToList('./scraper/links/cps/laptop.csv')
+#         self.driver.get(response.url)
+#         while True:
+#             self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+#             try:
+#                 self.driver.implicitly_wait(5)
+#                 a_tag = self.driver.find_element(By.CSS_SELECTOR,'#layout-desktop > div.cps-container.cps-body > div:nth-child(2) > div > div.block-filter-sort > div.filter-sort__list-product > div > div.cps-block-content_btn-showmore > a')
+#                 self.driver.execute_script("arguments[0].click();", a_tag)
+#             except:
+#                 break
+                        
+#         for item in self.driver.find_elements(By.CSS_SELECTOR,'.product-info-container .product-info .product__link'):
+#             link = item.get_attribute('href')
+#             flag = True
+#             for i in self.loaded:
+#                 if i[0] == link:
+#                     flag = False
+#                     break
+#             if flag:
+#                 addLinkToCSV('./scraper/links/cps/laptop.csv',[link])

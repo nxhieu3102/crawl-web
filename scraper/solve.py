@@ -79,7 +79,7 @@ import json
 import csv
 
 loaded = ''
-with open('abc.json','r') as file:
+with open('tablet.json','r') as file:
     loaded = json.load(file)
 
 res = []
@@ -98,3 +98,9 @@ with open('laptoplink.csv', 'w') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow(header)  # Write the fieldnames as the first row (header) in the CSV file
     writer.writerows(res)  # Write the data rows to the CSV file
+
+
+
+ 
+ 
+ 
