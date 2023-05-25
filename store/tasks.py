@@ -1,24 +1,25 @@
 from time import sleep
 from celery import shared_task
 
-from store.crawl.fptshop import FPTShopUpdateProduct
-from store.crawl.cellphones import CellPhoneSUpdateProduct
-from store.crawl.phongvu import PhongVuUpdateProduct
-from store.crawl.tgdd import TGDDUpdateProduct
+from store.crawl.fptshop import FPTShopUpdateProduct, FPTShopUpdateLink
+from store.crawl.cellphones import CellPhoneSUpdateProduct, CellPhoneSUpdateLink
+from store.crawl.phongvu import PhongVuUpdateProduct, PhongVuUpdateLink
+from store.crawl.tgdd import TGDDUpdateProduct, TGDDUpdateLink
 
     
 @shared_task()
 def fpt():
     FPTShopUpdateProduct()
-
+    
 @shared_task()
 def tgdd():
     TGDDUpdateProduct()
+
+@shared_task()
+def cellphones():
+    CellPhoneSUpdateProduct()
     
 @shared_task()
 def phongvu():
     PhongVuUpdateProduct()
     
-@shared_task()
-def cps():
-    CellPhoneSUpdateProduct()

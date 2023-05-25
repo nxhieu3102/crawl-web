@@ -1,0 +1,31 @@
+Phía Backend:
+
+Khởi động server -> python3 manage.py runserver
+Khởi động message broker redis -> redis-server
+Khởi động celery-beat
+Khởi động celery-worker
+
+Phía Frontend:
+
+Khởi động web
+
+
+Giới thiệu trang chủ
+
+Demo tìm kiếm:
+Điện thoại: Iphone 14 -> Iphone 14 pro 128gb
+laptop: Laptop HP Envy
+
+Demo filter 
+
+Demo chi tiết sản phẩm
+
+
+https://pytorch.org/tutorials/intermediate/torchvision_tutorial.html
+https://d2l.aivivn.com/
+https://www.youtube.com/watch?v=aircAruvnKk&t=3s
+https://docs.google.com/document/d/12rBtvqYHsMVKzJQSlDlzmSUgrAuXRbQmC18CSiBgtYY/edit
+
+
+
+

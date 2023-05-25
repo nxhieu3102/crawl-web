@@ -21,7 +21,6 @@ class ProductList(APIView):
         myString = myString[:-1].strip()
         num = myString.split(' ')[0]
         num = "".join(num.split('.'))
-        print("number: ", num)
         return int(num)
 
     def get(self, request, *args, **kwargs):
@@ -53,7 +52,7 @@ class ProductList(APIView):
             results = Product.objects.filter(
                 Q(Type=response_data['Type']) & ~Q(ShopName=response_data['ShopName']))
             results = results.annotate(similarity=TrigramSimilarity(
-                'ProductName', response_data['ProductName']),).filter(similarity__gte=0.1).order_by('-similarity')[:20]
+                'ProductName', response_data['ProductName']),).filter(similarity__gte=0.1).order_by('-similarity')[:100]
 
             shopmapping = {
                 "FPTShop": 0,
@@ -96,6 +95,8 @@ class ProductList(APIView):
                 if _shopresults[key]["ProductLink"] == "" or _shopresults[key]["SalePrice"] == "":
                     del shopresults[key]
                     continue
+            
+            #print(shopresults)
 
             response_data['PriceCompare'] = shopresults
 
@@ -135,21 +136,28 @@ class ProductList(APIView):
                 idx += 1
             return Response(response_data, status=status.HTTP_200_OK)
 
+        dataList = []
+        # for item in Product.objects.all():
+        #     dataList.append(item)
+            
         search = request.GET.get('search')
         if search != None:
             search = " ".join(search.split('+'))
             from django.contrib.postgres.search import TrigramSimilarity
             results = Product.objects.annotate(similarity=TrigramSimilarity(
-                'ProductName', search),).filter(similarity__gte=0.2).order_by('-similarity', '-SalePrice')
+                'ProductName', search),).filter(similarity__gte=0.2).order_by('-similarity', 'SalePrice')
             dataList = []
             for item in results:
                 dataList.append(item)
-            serializer = ProductSerializer(dataList, many=True)
-            return Response(serializer.data, status=status.HTTP_200_OK)
+            #serializer = ProductSerializer(dataList, many=True)
+            #return Response(serializer.data, status=status.HTTP_200_OK)
 
-        dataList = []
-        for item in Product.objects.all():
-            dataList.append(item)
+        # dataList = []
+        # for item in Product.objects.all():
+        #     dataList.append(item)
+        if len(dataList) == 0:
+            for item in Product.objects.all():
+                dataList.append(item)
 
         type = request.GET.get('list')
         if type != None and type != 'all':
@@ -160,13 +168,17 @@ class ProductList(APIView):
             for item in dataList:
                 if item.Type == type:
                     temp.append(item)
+            
+            if type == 'Máy tính bảng':
+                temp[0], temp[-1] = temp[-1], temp[0]
+                temp[1], temp[-2] = temp[-2], temp[1]
             dataList = temp
 
         brand = request.GET.get('brand')
         if brand != None:
             temp = []
             for item in dataList:
-                if item.BrandName == brand.upper():
+                if brand.lower() in item.BrandName.lower():
                     temp.append(item)
             dataList = temp
 
@@ -174,7 +186,7 @@ class ProductList(APIView):
         if shop != None:
             temp = []
             for item in dataList:
-                if item.ShopName == shop.upper():
+                if item.ShopName == shop:
                     temp.append(item)
             dataList = temp
 
@@ -242,7 +254,7 @@ class ProductList(APIView):
                 if tmp and tmp[0].SalePrice and ProductList.changeToNum(tmp[0].SalePrice) >= price[0] and ProductList.changeToNum(tmp[0].SalePrice) <= price[1]:
                     temp.append(item)
             dataList = temp
-            print(len(dataList))
+            #print(len(dataList))
 
         if len(dataList):
             serializer = ProductSerializer(dataList, many=True)

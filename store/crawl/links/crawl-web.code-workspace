@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../remote-control/crawl-web-frontend"
+		}
+	],
+	"settings": {}
+}
